@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> Layout-4 :: Job Portal </title>
+</head>
+<body>
+    
+   <div class="jb-layout-4-wrapper">
+
+        <!-- ======================
+                Header Area
+        ======================= -->
+        <div class="jb-l3-fixed-navbar hidden lg:flex">
+            <div class="container">
+                <div class="header flex-box">
+                    <div class="jb-logo-menu flex-box w-50">
+                        <div class="jb-logo">
+                            <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                        </div>
+                        <div class="jb-l4-nav">
+                            <nav>
+                                <ul>
+                                    <li class="jb-nav-item active"> <a href="#"> Recruiter </a> </li>
+                                    <li class="jb-nav-item"> <a href="#"> Job Seeker </a> </li>
+                                    <li class="jb-nav-item"> <a href="#"> About us </a> </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="jb-l4-hero-user-panel w-50">
+                        <ul class="jb-l4-justify-end">
+                            <li> <a href="login.html" class="jb-l4-user-login"> Login </a> </li>
+                            <li> <a href="#"> <button class="jb-l4-user-registration" type="button"> Registration </button> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========================
+            Mobile Nav Start
+        ========================== -->
+        <div id="mb-test" class="jb-mobile-navigation flex lg:hidden">
+            
+            <div class="jb-logo">
+                <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+            </div>
+            
+            <i id="jb-mobile-nav" class="ri-menu-line"></i>
+        </div>
+        <div id="jb-mb-menu-show" class="jb-mb-nav-wrapper">
+            <div class="jb-mb-nav-overlay">
+                <div class="jb-mb-menu-panel">
+                    <div class="jb-logo-menu-mobile jb-mb-border-b">
+                        <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                        
+                        <i id="tryit" class="ri-close-line"></i>
+
+                    </div>
+                    <nav class="jb-mobile-menu">
+                        <ul>
+                            <li> <a href="about-us.html"> <i class="ri-lock-line"></i> <span> Login </span>  </a></li>
+                            <li> <a href="user-registration.html"> <i class="ri-user-add-line"></i> <span> Register </span> </a> </li>
+                            <li> <a href="#"> <i class="ri-search-line"></i> <span> Search Jobs </span>  </a></li>
+                            <li> <a href="admin-registration.html"> <i class="ri-briefcase-line"></i> <span> Employer </span>  </a> </li>
+                            <li> <a href="about-us.html"> <i class="ri-information-line"></i> <span> About us </span> </a> </li>
+                        </ul>
+                    </nav>
+                    <div class="jb-user-mb-logout">
+                        <a href="#"> <i class="ri-logout-box-line"></i> <span> Logout</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jb-l4-hero-main">
+                <!-- ======================
+                        Hero Section
+                ======================= -->
+                <div class="jb-l4-hero-content-wrapper">
+                    <!-- ======================
+                            Hero content
+                    ======================= -->
+                    <div class="jb-l4-hero-content-body">
+                        <div class="w-full">
+                            <div class="l4-hero-text">
+                            <h1 class="jb-l4-hero-title"> Find Your Dream Job Now! </h1>
+                            <p class="jb-l4-hero-sub-title"> Lorem ipsum dolor sit amet, consetetur  </p>
+                        </div>
+    
+                        <!-- ======================
+                            Layout-4 Hero Search
+                        ======================= -->
+                        <div class="jb-l4-main-hero-search-inner-desktop" >
+                            <form class="jb-l4-main-hero-search">
+                                <ul class="l4-main-hero-inner-search">
+                                    <li class="l4-mb-search-item">
+                                        <label class="l4-search-label-for-mb" for="Search"> Search </label>
+
+                                        <i class="ri-search-line icon-green"></i>
+                                        <input type="text" placeholder="Job title">
+                                    </li>
+                                    <li class="l4-mb-search-item">
+                                        <label class="l4-search-label-for-mb" for="Location"> Location </label>
+
+                                        <i class="ri-map-pin-line icon-green"></i>
+                                        <select>
+                                            <option slected>Location</option>
+                                            <option>Dhaka</option>
+                                            <option>Berlin</option>
+                                            <option>New York</option>
+                                            <option>Sydney</option>
+                                        </select>
+                                    </li>
+                                    <li class="l4-mb-search-item">
+                                        <label class="l4-search-label-for-mb" for="Job Type"> Job Type </label>
+
+                                        <i class="ri-briefcase-line icon-green"></i>
+                                        <select>
+                                            <option selected>Full Time</option>
+                                            <option>Part Time</option>
+                                            <option>Remote</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <div class="l4-main-search-btn">
+                                    <button type="submit" name="search"> Search </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+                    <!-- ======================
+                        Layout-4 Hero Search
+                    ======================= -->
+    
+                    <div class="jb-l4-employee-card-wrapper">
+                        <div class="jb-l4-employee-card card-c-1">
+                            <img src="assets/images/layout-4/card-emp-1.png" alt="Card human">
+                        </div>
+                        <div class="jb-l4-employee-card card-c-2 mb-card-c-2">
+                            <img src="assets/images/layout-4/card-emp-2.png" alt="Card human">
+                        </div>
+                        <div class="jb-l4-employee-card card-c-3 mb-card-c-3">
+                            <img src="assets/images/layout-4/card-emp-3.png" alt="Card human">
+                        </div>
+                        <div class="jb-l4-employee-card card-c-4">
+                            <img src="assets/images/layout-4/card-emp-4.png" alt="Card human">
+                        </div>
+                        <div class="jb-l4-employee-card card-c-5 mb-card-c-5">
+                            <img src="assets/images/layout-4/card-emp-5.png" alt="Card human">
+                        </div>
+                        <div class="jb-l4-employee-card card-c-6">
+                            <img src="assets/images/layout-4/card-emp-6.png" alt="Card human">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- =============================
+        Layout-4 Browse Job Category
+    ================================== -->
+    <section class="jb-l4-job-cat-section">
+        <div class="container">
+            <h2 class="l4-section-title"> Browse Job Category </h2>
+
+            <div class="jb-l4-job-category-wrapper">
+                <div class="jb-l4-job-category-item">
+                    <div class="jb-l4-job-category-box">
+                        <img src="assets/images/layout-4/icon/g525521.png" alt="Job Category">
+                    </div>
+                    <span class="jb-l4-category-title"> Sales </span>
+                    <span class="jb-l4-category-stats"> 320 Jobs Open </span>
+                </div>
+                <div class="jb-l4-job-category-item">
+                    <div class="jb-l4-job-category-box">
+                        <img src="assets/images/layout-4/icon/g525521.png" alt="Job Category">
+                    </div>
+                    <span class="jb-l4-category-title"> Sales </span>
+                    <span class="jb-l4-category-stats"> 320 Jobs Open </span>
+                </div>
+                <div class="jb-l4-job-category-item">
+                    <div class="jb-l4-job-category-box">
+                        <img src="assets/images/layout-4/icon/g525521.png" alt="Job Category">
+                    </div>
+                    <span class="jb-l4-category-title"> Sales </span>
+                    <span class="jb-l4-category-stats"> 320 Jobs Open </span>
+                </div>
+                <div class="jb-l4-job-category-item">
+                    <div class="jb-l4-job-category-box">
+                        <img src="assets/images/layout-4/icon/g525521.png" alt="Job Category">
+                    </div>
+                    <span class="jb-l4-category-title"> Sales </span>
+                    <span class="jb-l4-category-stats"> 320 Jobs Open </span>
+                </div>
+                <div class="jb-l4-job-category-item">
+                    <div class="jb-l4-job-category-box">
+                        <img src="assets/images/layout-4/icon/g525521.png" alt="Job Category">
+                    </div>
+                    <span class="jb-l4-category-title"> Sales </span>
+                    <span class="jb-l4-category-stats"> 320 Jobs Open </span>
+                </div>
+                <div class="jb-l4-job-category-item">
+                    <div class="jb-l4-job-category-box">
+                        <img src="assets/images/layout-4/icon/g525521.png" alt="Job Category">
+                    </div>
+                    <span class="jb-l4-category-title"> Sales </span>
+                    <span class="jb-l4-category-stats"> 320 Jobs Open </span>
+                </div>
+                <div class="jb-l4-job-category-item">
+                    <div class="jb-l4-job-category-box">
+                        <img src="assets/images/layout-4/icon/g525521.png" alt="Job Category">
+                    </div>
+                    <span class="jb-l4-category-title"> Sales </span>
+                    <span class="jb-l4-category-stats"> 320 Jobs Open </span>
+                </div>
+                <div class="jb-l4-job-category-item">
+                    <div class="jb-l4-job-category-box">
+                        <img src="assets/images/layout-4/icon/g525521.png" alt="Job Category">
+                    </div>
+                    <span class="jb-l4-category-title"> Sales </span>
+                    <span class="jb-l4-category-stats"> 320 Jobs Open </span>
+                </div>
+                <div class="jb-l4-job-category-item">
+                    <div class="jb-l4-job-category-box">
+                        <img src="assets/images/layout-4/icon/g525521.png" alt="Job Category">
+                    </div>
+                    <span class="jb-l4-category-title"> Sales </span>
+                    <span class="jb-l4-category-stats"> 320 Jobs Open </span>
+                </div>
+                <div class="jb-l4-job-category-item">
+                    <div class="jb-l4-job-category-box">
+                        <img src="assets/images/layout-4/icon/g525521.png" alt="Job Category">
+                    </div>
+                    <span class="jb-l4-category-title"> Sales </span>
+                    <span class="jb-l4-category-stats"> 320 Jobs Open </span>
+                </div>
+            </div>
+
+            <button class="l4-browse-more">Browse  all categories </button>
+            <p class="l4-all-job-items-mb"> <span> View all categories </span> <i class="ri-arrow-right-s-line"></i> </p>
+        </div>
+    </section>
+
+    <!-- ==================================
+        Layout-4 Explore Jobs Near You
+    =================================== -->
+
+    <section class="jb-l4-browse-job">
+        <div class="container">
+            <h2 class="l4-section-title"> Explore Jobs Near You </h2>
+
+            <div class="jb-l4-jobs-near-body">
+                <div class="jb-l4-all-job-near-item">
+                    <img class="l4-com-logo" src="assets/images/layout-4/company.png" alt="Company Logo">
+                    <div class="jb-l4-day-job-details">
+                        <div class="jb-l4-day-job-details-left">
+                            <div class="l4-jobs-near-same-row">
+                                <div class="l4-same-row-content">
+                                    <span class="l4-job-full-time"> Full Time </span>
+                                    <span class="l4-day-job-com-title"> Digital Marketing Manager </span>
+                                    <p class="l4-day-job-com-sub-title"> Acer Bangladesh </p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <i class="ri-map-pin-line icon-green jr-font-fix"></i> <span> Dhaka </span>
+                                    </li>
+                                    <li>
+                                        <i class="ri-briefcase-line icon-green jr-font-fix"></i> <span> 2 years </span>
+                                    </li>
+                                    <li>
+                                        <i class="ri-money-dollar-circle-line icon-green jr-font-fix"></i> <span> 3,000-4,000 </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="l4-near-jobs-posted-date">   2 days ago </span>
+                        </div>
+                        <div class="jb-l4-job-near-details-right">
+                            <button type="button" class="jb-l4-day-job-action-btn"> Apply </button>
+
+                            <div class="jb-l4-day-job-favourite">
+                                <i class="ri-heart-line icon-green js-font-fix"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jb-l4-all-job-near-item">
+                    <img class="l4-com-logo" src="assets/images/layout-4/company.png" alt="Company Logo">
+                    <div class="jb-l4-day-job-details">
+                        <div class="jb-l4-day-job-details-left">
+                            <div class="l4-jobs-near-same-row">
+                                <div class="l4-same-row-content">
+                                    <span class="l4-job-full-time"> Full Time </span>
+                                    <span class="l4-day-job-com-title"> Digital Marketing Manager </span>
+                                    <p class="l4-day-job-com-sub-title"> Acer Bangladesh </p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <i class="ri-map-pin-line icon-green jr-font-fix"></i> <span> Dhaka </span>
+                                    </li>
+                                    <li>
+                                        <i class="ri-briefcase-line icon-green jr-font-fix"></i> <span> 2 years </span>
+                                    </li>
+                                    <li>
+                                        <i class="ri-money-dollar-circle-line icon-green jr-font-fix"></i> <span> 3,000-4,000 </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="l4-near-jobs-posted-date">   2 days ago </span>
+                        </div>
+                        <div class="jb-l4-job-near-details-right">
+                            <button type="button" class="jb-l4-day-job-action-btn"> Apply </button>
+
+                            <div class="jb-l4-day-job-favourite">
+                                <i class="ri-heart-line icon-green js-font-fix"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jb-l4-all-job-near-item">
+                    <img class="l4-com-logo" src="assets/images/layout-4/company.png" alt="Company Logo">
+                    <div class="jb-l4-day-job-details">
+                        <div class="jb-l4-day-job-details-left">
+                            <div class="l4-jobs-near-same-row">
+                                <div class="l4-same-row-content">
+                                    <span class="l4-job-full-time"> Full Time </span>
+                                    <span class="l4-day-job-com-title"> Digital Marketing Manager </span>
+                                    <p class="l4-day-job-com-sub-title"> Acer Bangladesh </p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <i class="ri-map-pin-line icon-green jr-font-fix"></i> <span> Dhaka </span>
+                                    </li>
+                                    <li>
+                                        <i class="ri-briefcase-line icon-green jr-font-fix"></i> <span> 2 years </span>
+                                    </li>
+                                    <li>
+                                        <i class="ri-money-dollar-circle-line icon-green jr-font-fix"></i> <span> 3,000-4,000 </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="l4-near-jobs-posted-date">   2 days ago </span>
+                        </div>
+                        <div class="jb-l4-job-near-details-right">
+                            <button type="button" class="jb-l4-day-job-action-btn"> Apply </button>
+
+                            <div class="jb-l4-day-job-favourite">
+                                <i class="ri-heart-line icon-green js-font-fix"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jb-l4-all-job-near-item">
+                    <img class="l4-com-logo" src="assets/images/layout-4/company.png" alt="Company Logo">
+                    <div class="jb-l4-day-job-details">
+                        <div class="jb-l4-day-job-details-left">
+                            <div class="l4-jobs-near-same-row">
+                                <div class="l4-same-row-content">
+                                    <span class="l4-job-full-time"> Full Time </span>
+                                    <span class="l4-day-job-com-title"> Digital Marketing Manager </span>
+                                    <p class="l4-day-job-com-sub-title"> Acer Bangladesh </p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <i class="ri-map-pin-line icon-green jr-font-fix"></i> <span> Dhaka </span>
+                                    </li>
+                                    <li>
+                                        <i class="ri-briefcase-line icon-green jr-font-fix"></i> <span> 2 years </span>
+                                    </li>
+                                    <li>
+                                        <i class="ri-money-dollar-circle-line icon-green jr-font-fix"></i> <span> 3,000-4,000 </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="l4-near-jobs-posted-date">   2 days ago </span>
+                        </div>
+                        <div class="jb-l4-job-near-details-right">
+                            <button type="button" class="jb-l4-day-job-action-btn"> Apply </button>
+
+                            <div class="jb-l4-day-job-favourite">
+                                <i class="ri-heart-line icon-green js-font-fix"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="l4-browse-more"> View all jobs </button>
+            <p class="l4-all-job-items-mb"> <span> View all jobs </span> <i class="ri-arrow-right-s-line"></i> </p>
+
+        </div>
+    </section>
+
+    <!-- ==================================
+        Layout-4 Job By Location
+    =================================== -->
+
+    <section class="jb-l4-job-location">
+        <div class="container">
+            <h2 class="l4-section-title"> Job by Location </h2>
+
+            <div class="jb-l4-job-by-location-body">
+                <div class="jb-l4-job-by-location-item">
+                    <img src="assets/images/layout-4/job-location/morocco.png" alt="Morocco City">
+                    <button type="button" class="l4-city-jobs-stats"> 225 Jobs </button>
+                    <div class="jb-l4-job-by-location-details">
+                        <span class="l4-location-title-box"> <i class="ri-map-pin-2-fill icon-green"></i> <span> Morocco </span> </span>
+                    </div>
+                </div>
+
+                <div class="jb-l4-job-by-location-item">
+                    <img src="assets/images/layout-4/job-location/dubai.png" alt="Dubai City">
+                    <button type="button" class="l4-city-jobs-stats"> 225 Jobs </button>
+                    <div class="jb-l4-job-by-location-details">
+                        <span class="l4-location-title-box"> <i class="ri-map-pin-2-fill icon-green"></i> <span> Dubai </span> </span>
+                    </div>
+                </div>
+
+                <div class="jb-l4-job-by-location-item">
+                    <img src="assets/images/layout-4/job-location/oslo.png" alt="Oslo City">
+                    <button type="button" class="l4-city-jobs-stats"> 225 Jobs </button>
+                    <div class="jb-l4-job-by-location-details">
+                        <span class="l4-location-title-box"> <i class="ri-map-pin-2-fill icon-green"></i> <span> Oslo </span> </span>
+                    </div>
+                </div>
+
+                <div class="jb-l4-job-by-location-item">
+                    <img src="assets/images/layout-4/job-location/sydney.png" alt="Sydney City">
+                    <button type="button" class="l4-city-jobs-stats"> 225 Jobs </button>
+                    <div class="jb-l4-job-by-location-details">
+                        <span class="l4-location-title-box"> <i class="ri-map-pin-2-fill icon-green"></i> <span> Sydney </span> </span>
+                    </div>
+                </div>
+
+                <div class="jb-l4-job-by-location-item">
+                    <img src="assets/images/layout-4/job-location/paris.png" alt="Paris City">
+                    <button type="button" class="l4-city-jobs-stats"> 225 Jobs </button>
+                    <div class="jb-l4-job-by-location-details">
+                        <span class="l4-location-title-box"> <i class="ri-map-pin-2-fill icon-green"></i> <span> Paris </span> </span>
+                    </div>
+                </div>
+
+                <div class="jb-l4-job-by-location-item">
+                    <img src="assets/images/layout-4/job-location/dhaka.png" alt="Dhaka City">
+                    <button type="button" class="l4-city-jobs-stats"> 225 Jobs </button>
+                    <div class="jb-l4-job-by-location-details">
+                        <span class="l4-location-title-box"> <i class="ri-map-pin-2-fill icon-green"></i> <span> Dhaka </span> </span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="l4-location-all-items"> <span> Find more companies </span> <i class="ri-arrow-right-s-line"></i> </p>
+
+        </div>
+    </section>
+
+
+    <!-- ===========================
+      Layout-4 Find Best Companies
+    ============================ -->
+
+    <section>
+        <div class="jb-l4-best-companies-wrapper">
+            <div class="container">
+                <h2 class="l4-section-title"> Find Best Companies </h2>
+
+                <div class="jb-l4-best-companies-body">
+
+                    <div class="l4-best-companies-item">
+                        <img class="l4-best-companies-photo" src="assets/images/layout-4/job-location/walton.svg" alt="Companies">
+
+                        <span class="l4-companies-rating"> <span class="l4-companies-rating-icon"> <i class="ri-star-s-fill"></i> </span> 4.2 </span>
+                        <span class="l4-companies-title"> Walton BD </span>
+
+                        <p class="l4-best-companies-desc"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </p>
+                        <ul class="l4-best-companies-list">
+                            <li><img src="assets/images/layout-4/job-location/loc-city-1.svg" alt="Eco Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-2.svg" alt="Office Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-3.svg" alt="Working Women"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-4.svg" alt="Office"></li>
+                        </ul>
+                        <div class="l4-location-based-jobs-stats">
+                            <span class="l4-loacation-marker">  <i class="ri-map-pin-2-fill icon-green"></i> <span> Dhaka </span> </span>
+                            <span class="l4-loacation-jobs"> 25 Open Jobs </span>
+                        </div>
+                    </div>
+
+                    <div class="l4-best-companies-item l4-best-mt-extra-00">
+                        <img class="l4-best-companies-photo" src="assets/images/layout-4/job-location/walton.svg" alt="Companies">
+
+                        <span class="l4-companies-rating"> <span class="l4-companies-rating-icon"> <i class="ri-star-s-fill"></i> </span> 4.2 </span>
+                        <span class="l4-companies-title"> Walton BD </span>
+
+                        <p class="l4-best-companies-desc"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </p>
+                        <ul class="l4-best-companies-list">
+                            <li><img src="assets/images/layout-4/job-location/loc-city-1.svg" alt="Eco Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-2.svg" alt="Office Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-3.svg" alt="Working Women"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-4.svg" alt="Office"></li>
+                        </ul>
+
+                        <div class="l4-location-based-jobs-stats">
+                            <span class="l4-loacation-marker">  <i class="ri-map-pin-2-fill icon-green"></i> <span> Dhaka </span> </span>
+                            <span class="l4-loacation-jobs"> 25 Open Jobs </span>
+                        </div>
+                    </div>
+
+                    <div class="l4-best-companies-item l4-best-mt-extra-0">
+                        <img class="l4-best-companies-photo" src="assets/images/layout-4/job-location/walton.svg" alt="Companies">
+
+                        <span class="l4-companies-rating"> <span class="l4-companies-rating-icon"> <i class="ri-star-s-fill"></i> </span> 4.2 </span>
+                        <span class="l4-companies-title"> Walton BD </span>
+
+                        <p class="l4-best-companies-desc"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </p>
+                        <ul class="l4-best-companies-list">
+                            <li><img src="assets/images/layout-4/job-location/loc-city-1.svg" alt="Eco Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-2.svg" alt="Office Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-3.svg" alt="Working Women"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-4.svg" alt="Office"></li>
+                        </ul>
+
+                        <div class="l4-location-based-jobs-stats">
+                            <span class="l4-loacation-marker">  <i class="ri-map-pin-2-fill icon-green"></i> <span> Dhaka </span> </span>
+                            <span class="l4-loacation-jobs"> 25 Open Jobs </span>
+                        </div>
+                    </div>
+
+                    <div class="l4-best-companies-item l4-best-mt-extra-1">
+                        <img class="l4-best-companies-photo" src="assets/images/layout-4/job-location/walton.svg" alt="Companies">
+
+                        <span class="l4-companies-rating"> <span class="l4-companies-rating-icon"> <i class="ri-star-s-fill"></i> </span> 4.2 </span>
+                        <span class="l4-companies-title"> Walton BD </span>
+
+                        <p class="l4-best-companies-desc"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </p>
+                        <ul class="l4-best-companies-list">
+                            <li><img src="assets/images/layout-4/job-location/loc-city-1.svg" alt="Eco Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-2.svg" alt="Office Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-3.svg" alt="Working Women"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-4.svg" alt="Office"></li>
+                        </ul>
+
+                        <div class="l4-location-based-jobs-stats">
+                            <span class="l4-loacation-marker">  <i class="ri-map-pin-2-fill icon-green"></i> <span> Dhaka </span> </span>
+                            <span class="l4-loacation-jobs"> 25 Open Jobs </span>
+                        </div>
+                    </div>
+
+                    <div class="l4-best-companies-item l4-best-mt-extra">
+                        <img class="l4-best-companies-photo" src="assets/images/layout-4/job-location/walton.svg" alt="Companies">
+
+                        <span class="l4-companies-rating"> <span class="l4-companies-rating-icon"> <i class="ri-star-s-fill"></i> </span> 4.2 </span>
+                        <span class="l4-companies-title"> Walton BD </span>
+
+                        <p class="l4-best-companies-desc"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </p>
+                        <ul class="l4-best-companies-list">
+                            <li><img src="assets/images/layout-4/job-location/loc-city-1.svg" alt="Eco Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-2.svg" alt="Office Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-3.svg" alt="Working Women"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-4.svg" alt="Office"></li>
+                        </ul>
+
+                        <div class="l4-location-based-jobs-stats">
+                            <span class="l4-loacation-marker">  <i class="ri-map-pin-2-fill icon-green"></i> <span> Dhaka </span> </span>
+                            <span class="l4-loacation-jobs"> 25 Open Jobs </span>
+                        </div>
+                    </div>
+
+                    <div class="l4-best-companies-item l4-best-mt-extra">
+                        <img class="l4-best-companies-photo" src="assets/images/layout-4/job-location/walton.svg" alt="Companies">
+
+                        <span class="l4-companies-rating"> <span class="l4-companies-rating-icon"> <i class="ri-star-s-fill"></i> </span> 4.2 </span>
+                        <span class="l4-companies-title"> Walton BD </span>
+
+                        <p class="l4-best-companies-desc"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </p>
+                        <ul class="l4-best-companies-list">
+                            <li><img src="assets/images/layout-4/job-location/loc-city-1.svg" alt="Eco Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-2.svg" alt="Office Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-3.svg" alt="Working Women"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-4.svg" alt="Office"></li>
+                        </ul>
+
+                        <div class="l4-location-based-jobs-stats">
+                            <span class="l4-loacation-marker">  <i class="ri-map-pin-2-fill icon-green"></i> <span> Dhaka </span> </span>
+                            <span class="l4-loacation-jobs"> 25 Open Jobs </span>
+                        </div>
+                    </div>
+
+                    <div class="l4-best-companies-item l4-best-mt-extra">
+                        <img class="l4-best-companies-photo" src="assets/images/layout-4/job-location/walton.svg" alt="Companies">
+
+                        <span class="l4-companies-rating"> <span class="l4-companies-rating-icon"> <i class="ri-star-s-fill"></i> </span> 4.2 </span>
+                        <span class="l4-companies-title"> Walton BD </span>
+
+                        <p class="l4-best-companies-desc"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </p>
+                        <ul class="l4-best-companies-list">
+                            <li><img src="assets/images/layout-4/job-location/loc-city-1.svg" alt="Eco Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-2.svg" alt="Office Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-3.svg" alt="Working Women"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-4.svg" alt="Office"></li>
+                        </ul>
+
+                        <div class="l4-location-based-jobs-stats">
+                            <span class="l4-loacation-marker">  <i class="ri-map-pin-2-fill icon-green"></i> <span> Dhaka </span> </span>
+                            <span class="l4-loacation-jobs"> 25 Open Jobs </span>
+                        </div>
+                    </div>
+
+                    <div class="l4-best-companies-item l4-best-mt-extra">
+                        <img class="l4-best-companies-photo" src="assets/images/layout-4/job-location/walton.svg" alt="Companies">
+
+                        <span class="l4-companies-rating"> <span class="l4-companies-rating-icon"> <i class="ri-star-s-fill"></i> </span> 4.2 </span>
+                        <span class="l4-companies-title"> Walton BD </span>
+
+                        <p class="l4-best-companies-desc"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </p>
+                        <ul class="l4-best-companies-list">
+                            <li><img src="assets/images/layout-4/job-location/loc-city-1.svg" alt="Eco Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-2.svg" alt="Office Environment"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-3.svg" alt="Working Women"></li>
+                            <li><img src="assets/images/layout-4/job-location/loc-city-4.svg" alt="Office"></li>
+                        </ul>
+
+                        <div class="l4-location-based-jobs-stats">
+                            <span class="l4-loacation-marker">  <i class="ri-map-pin-2-fill icon-green"></i> <span> Dhaka </span> </span>
+                            <span class="l4-loacation-jobs"> 25 Open Jobs </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+           Layout-4 Testmonial
+    ============================ -->
+    <section>
+        <div class="jb-l4-testmonial-wrapper">
+            <div class="container">
+                <div class="jb-l4-testmonial-slider">
+                    <div class="l4-testmonial-reviwer-img">
+                        <div class="l4-root-reviewer-img">
+                            <div class="l4-reviewer-img">
+                                <img src="assets/images/layout-4/team/headshot-1.png" alt="Reviwer">
+                            </div>
+                            <div class="l4-reviewer-img active-slide">
+                                <img src="assets/images/layout-4/team/headshot-2.png" alt="Reviwer">
+                            </div>
+                            <div class="l4-reviewer-img">
+                                <img src="assets/images/layout-4/team/headshot-3.png" alt="Reviwer">
+                            </div>
+                            <div class="l4-reviewer-img">
+                                <img src="assets/images/layout-4/team/headshot-4.png" alt="Reviwer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l4-reviewer-reviewer-comments">
+                        <h4 class="l4-testmonial-title"> What Our Clients Say </h4>
+                        <img class="l4-quote-icon" src="assets/images/layout-3/home/slider/left-quote.svg" alt="Quote">
+
+                        <div class="l4-testmonial-comments-box">
+                            <p class="l4-testmonial-reviews">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                            </p>
+                            <span class="l3-reviewer-author"> Alison Lulita </span>
+                            <span class="l3-reviewer-position"> COO, Hublot LLC. </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+        L3 & L4 Common Footer
+    =========================== -->
+
+    <footer>
+        <div class="jb-l3-footer-wrapper">
+            <div class="container px-mb l3-footer-mb">
+                <div class="jb-footer-content l3-footer-flex-fix border-b-unset">
+                    <div class="jb-l4-footer-logo-box">
+                        <img src="assets/images/logo/footer-logo.svg" alt="Footer Logo">
+                        <span class="jb-l3-social-icon-box l3-jb-l3-social-icon-box"> 
+                            <i class="ri-facebook-fill"></i> <i class="ri-twitter-fill"></i> <i class="ri-instagram-line"></i> <i class="ri-linkedin-fill"></i>
+                        </span>
+                    </div>
+
+                    <div class="jb-l3-l4-common-footer-content">
+
+                        <ul class="jb-footer-list">
+                            <li class="jb-footer-nav-header jb-l3-footer-nav-header footer-mb-trigger">
+                                <a href="#">Recruiter</a>
+                                <span class="l3-l4-footer-expand-icon rotateIcon">
+                                  <i class="ri-arrow-down-s-line "></i>
+                                </span>
+                              </li>
+                            <li class="jb-footer-nav-header jb-l3-footer-nav-header footer-mb-h fe-1"> <a href="#"> Post a job </a> </li>
+                            <li class="jb-footer-nav-header jb-l3-footer-nav-header footer-mb-h fe-1"> <a href="#"> Job list </a> </li>
+                        </ul>
+                        <ul class="jb-footer-list">
+                            <li class="jb-footer-nav-header jb-l3-footer-nav-header footer-mb-trigger">
+                                <a href="#">Job Seeker</a>
+                                <span class="l3-l4-footer-expand-icon rotateIcon">
+                                  <i class="ri-arrow-down-s-line"></i>
+                                </span>
+                              </li>
+                            <li class="jb-footer-nav-header jb-l3-footer-nav-header footer-mb-h fe-2"> <a href="#"> Search job </a> </li>
+                            <li class="jb-footer-nav-header jb-l3-footer-nav-header footer-mb-h fe-2"> <a href="#"> Profile </a> </li>
+                        </ul>
+                        <ul class="jb-footer-list">
+                            <li class="jb-footer-nav-header jb-l3-footer-nav-header footer-mb-trigger">
+                                <a href="#">About Us</a>
+                                <span class="l3-l4-footer-expand-icon rotateIcon">
+                                  <i class="ri-arrow-down-s-line"></i>
+                                </span>
+                              </li>
+                            <li class="jb-footer-nav-header jb-l3-footer-nav-header footer-mb-h fe-3 bg-f"> <a href="#"> Privacy & Policy </a> </li>
+                            <li class="jb-footer-nav-header jb-l3-footer-nav-header footer-mb-h fe-3 bg-f-1"> <a href="#"> FAQ </a> </li>
+                            <li>
+                                <p class="jb-l3-footer-newsletter-desc">
+                                    <span> Newsletter: </span> You can trust us, we only send promo offers.
+                                </p>
+                            </li>
+                            <li class="jb-footer-subscribe-box">
+                                <span class="jb-header-mb"> Subscribe </span>
+                                <form>
+                                    <input type="email" name="subscription-email" placeholder="Enter your email">
+                                    <i class="ri-arrow-right-line"></i>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="jb-footer-copyright px-mb-enable l4-l3-footer-border-top">
+                <div class="container">
+                    <p> © 2023 <span>Job Portal</span> | Designed by <span>Arc Studio</span> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+    const mobileNav = document.getElementById('mb-test');
+    const header = document.querySelector(".jb-l3-fixed-navbar");
+    const toggleClass = "is-sticky";
+
+    // Get all <ul> elements with class 'jb-footer-list'
+    let ulLists = document.querySelectorAll('.jb-footer-list');
+
+    ulLists.forEach((ul) => {
+    let footerTrigger = ul.querySelector('.jb-footer-nav-header');
+    let footerExpand = ul.querySelectorAll('.fe-1, .fe-2, .fe-3');
+    let arrowIcon = ul.querySelector('.rotateIcon');
+
+    footerTrigger.addEventListener('click', () => {
+        footerExpand.forEach((expandItem) => {
+        expandItem.classList.toggle('l3-l4-expanded-Nav');
+        });
+
+        arrowIcon.classList.toggle('rotate');
+    });
+    });
+
+    window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 150) {
+        header.classList.add(toggleClass);
+        mobileNav.classList.add(toggleClass);
+    } else {
+        header.classList.remove(toggleClass);
+        mobileNav.classList.remove(toggleClass);
+    }
+    });
+
+    let jbMbMenu = document.getElementById('jb-mobile-nav');
+    let jbMbMenu2 = document.getElementById('tryit');
+    let jbMbMenuDis = document.getElementById('jb-mb-menu-show');
+
+    jbMbMenu.addEventListener("click", () => {
+        jbMbMenuDis.classList.add('jb-Mb-Menu-active');
+    });
+
+    document.addEventListener("click", (e) => {
+        if(e.target == jbMbMenu2){
+            jbMbMenuDis.classList.remove('jb-Mb-Menu-active');
+        }
+    });
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>user registration | Job Portal</title>
+</head>
+<body>
+
+        <!-- 
+    ======================
+    Header Area
+    ======================
+    -->
+<div class="container py-5 hidden lg:block">
+    <div id="reg-nav-bar" class="header flex-box">
+        <div class="jb-logo-menu flex-box w-50">
+            <div class="jb-logo">
+                <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+            </div>
+            <div class="jb-nav">
+                <nav>
+                    <ul>
+                        <li class="jb-nav-item"> <a href="#"> Find Jobs </a> </li>
+                        <li class="jb-nav-item"> <a href="#"> About us </a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =========================
+        Mobile Nav Start
+========================== -->
+<div id="mb-test" class="jb-mobile-navigation jb-other-page-mb-menu flex lg:hidden">
+        
+    <div class="jb-logo">
+        <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+    </div>
+    
+    <i id="jb-mobile-nav2" class="ri-menu-line"></i>
+</div>
+<div id="jb-mb-menu-show2" class="jb-mb-nav-wrapper">
+    <div class="jb-mb-nav-overlay">
+        <div class="jb-mb-menu-panel">
+            <div class="jb-logo-menu-mobile jb-mb-border-b">
+                <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                
+                <i id="tryit" class="ri-close-line"></i>
+
+            </div>
+            <nav class="jb-mobile-menu">
+                <ul>
+                    <li> <a href="#"> <i class="ri-search-line"></i> <span> Find Jobs </span>  </a></li>
+                    <li> <a href="about-us.html"> <i class="ri-information-line"></i> <span> About us </span> </a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<!-- ===============================
+    user registration form section 
+================================ -->
+
+<div class="jb-registration-wrapper">
+    <div class="container">
+        <!-- 
+        ===============================
+        user registration form wrapper
+        ===============================
+        -->
+        <div class="jb-registration-body">
+
+            <div class="jb-registration-form">
+                <h3 class="registration-form-title">Registration</h3> 
+                <p class="registration-form-tagline" >Find a job and grow your career </p>
+
+            <!-- 
+            ==========================
+            user registration form 
+            ==========================
+            -->
+
+            <form action="#">
+                <div class="form-control form-flex">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div class="form-control">
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="form-control">
+                    <input type="password" placeholder="Password">
+                    <i class="ri-eye-line reg-eye"></i>
+                </div>
+
+                <div class="form-control">
+                    <input type="password" placeholder="Confirm Password">
+                    <i class="ri-eye-line reg-eye"></i>
+                </div>
+
+                <div class="form-control">
+                    <span class="form-fixed-number">+880</span>
+                    <input class="input-number" type="tel" placeholder="16xxxxxxxx">
+                </div>
+                <div class="form-control">
+                    <select name="" id="">
+                        <option value="null" selected disabled> Choose your skill </option>
+                        <option value=""> skill A</option>
+                        <option value=""> skill B</option>
+                        <option value=""> skill C</option>
+                    </select>
+                </div>
+                <div class="form-control form-flex">
+                    <button class="form-flex"> <img src="./assets/images/user-registration/seedling.svg" alt=""> Fresher</button>
+                    <button class="form-flex"> <img src="./assets/images/user-registration/certificate.svg" alt=""> Experienced</button>
+                </div>
+
+                <div class="form-control-upload-file">
+                   <span class="upload-file"> upload cv</span> 
+                   <button class="upload-file-btn" onclick="document.getElementById('getFile').click()">choose file</button>
+                   <label for="click-input" id="file-name"></label>
+                    <input type='file' id="getFile" style="display:none">
+                    <span class="upload-file-type">only doc, docx,pdf | Max 2MB </span>
+                </div>
+
+                <div class="jb-check-job-type">
+                    <label class="c-container reg-color">  <span>I accepted all terms and condition</span> 
+                    <input type="checkbox">
+                    <span class="checkmark login-checkmark reg-blue"></span>
+                    </label>
+                </div>
+                
+                <button class="register-btn">Register Now</button>
+            </form>
+            <div class="another-way-to-registration">
+                <span>or Sign in with </span>
+                <button class="registration-with-google"> 
+                    <svg id="google" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <path id="Path_249" data-name="Path 249" d="M273.3,211.479h-5.711a.457.457,0,0,0-.457.457v1.824a.457.457,0,0,0,.457.457H270.8a4.293,4.293,0,0,1-1.848,2.165l1.371,2.374a6.864,6.864,0,0,0,3.5-6,4.628,4.628,0,0,0-.079-.9A.459.459,0,0,0,273.3,211.479Z" transform="translate(-259.827 -205.696)" fill="#167ee6"/>
+                        <path id="Path_250" data-name="Path 250" d="M40.47,335.979a4.26,4.26,0,0,1-3.685-2.132l-2.374,1.368a6.994,6.994,0,0,0,9.559,2.566v0L42.6,335.4A4.229,4.229,0,0,1,40.47,335.979Z" transform="translate(-33.47 -324.718)" fill="#12b347"/>
+                        <path id="Path_251" data-name="Path 251" d="M259.5,393.156v0l-1.371-2.374a4.229,4.229,0,0,1-2.129.575v2.739A6.988,6.988,0,0,0,259.5,393.156Z" transform="translate(-249 -380.094)" fill="#0f993e"/>
+                        <path id="Path_252" data-name="Path 252" d="M2.739,131.616a4.229,4.229,0,0,1,.575-2.129L.941,128.119a6.968,6.968,0,0,0,0,6.993l2.374-1.368A4.229,4.229,0,0,1,2.739,131.616Z" transform="translate(0 -124.616)" fill="#ffd500"/>
+                        <path id="Path_253" data-name="Path 253" d="M40.47,2.739a4.241,4.241,0,0,1,2.705.971.455.455,0,0,0,.612-.028L45.08,2.39a.46.46,0,0,0-.026-.673A6.985,6.985,0,0,0,34.411,3.5l2.374,1.368A4.26,4.26,0,0,1,40.47,2.739Z" transform="translate(-33.47 0)" fill="#ff4b26"/>
+                        <path id="Path_254" data-name="Path 254" d="M258.705,3.71a.455.455,0,0,0,.612-.028L260.61,2.39a.46.46,0,0,0-.026-.673A6.979,6.979,0,0,0,256,0V2.739A4.241,4.241,0,0,1,258.705,3.71Z" transform="translate(-249)" fill="#d93f21"/>
+                      </svg>                      
+                    
+                    Continue with Google
+                </button>
+                <button class="registration-with-fb"> 
+                    <svg id="facebook_6_" data-name="facebook (6)" xmlns="http://www.w3.org/2000/svg" width="16.833" height="16.833" viewBox="0 0 16.833 16.833">
+                        <path id="Path_247" data-name="Path 247" d="M16.833,8.417a8.419,8.419,0,0,1-7.1,8.314V10.85h1.961l.373-2.433H9.732V6.838A1.216,1.216,0,0,1,11.1,5.523h1.061V3.452a12.946,12.946,0,0,0-1.884-.164A2.97,2.97,0,0,0,7.1,6.562V8.417H4.965V10.85H7.1v5.881a8.417,8.417,0,1,1,9.732-8.314Z" fill="#1877f2"/>
+                        <path id="Path_248" data-name="Path 248" d="M157.728,107.562l.373-2.433h-2.334V103.55a1.216,1.216,0,0,1,1.372-1.314H158.2v-2.071a12.943,12.943,0,0,0-1.884-.164,2.97,2.97,0,0,0-3.179,3.275v1.854H151v2.433h2.137v5.881a8.506,8.506,0,0,0,2.63,0v-5.881Z" transform="translate(-146.035 -96.712)" fill="#fff"/>
+                      </svg>
+                      
+                    Continue with Facebook
+                </button>
+            </div>
+            </div>
+
+            <!-- 
+            ==============================
+            user registration form content
+            ==============================
+            -->                
+            <div class="jb-registration-content">
+                <img class="login-bg-for-large-device" src="assets/images/login-form.png" alt="Login Form Quote" width="370" height="427">
+                <img class="login-bg-for-mobile" src="assets/images/bg-image/login-mb-bg.svg" alt="Login Form Quote">
+
+                <div class="registration-content-inner">
+                    <blockquote class="registration-quote">“Find out what you like doing best and get <br> someone to pay you for doing it.”</blockquote>
+                    <span class="registration-quote-author"> – Katherine Whitehorn</span>
+
+                </div>
+            </div>
+        </div>
+    </div>            
+</div>
+    
+<!-- cv input file path  -->
+<script>
+
+    // Sticky Navbar
+    const mobileNav = document.getElementById('mb-test');
+    const toggleClass = "is-sticky";
+
+    window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 150) {
+        mobileNav.classList.add(toggleClass);
+    } else {
+        mobileNav.classList.remove(toggleClass);
+    }
+    });
+
+    // Add text on file upload
+    document.getElementById("getFile").addEventListener("change",function(e){
+
+    let path = document.getElementById("getFile").value 
+    if (path) {
+        document.getElementById("file-name").innerHTML = path.split(/(\\|\/)/g).pop()
+        } else {
+            document.getElementById("file-name").innerHTML = ''
+        }     
+    })
+
+    // Mobile Menu
+    let jbMbMenu = document.getElementById('jb-mobile-nav2');
+    let jbMbMenu2 = document.getElementById('tryit');
+    let jbMbMenuDis = document.getElementById('jb-mb-menu-show2');
+
+    jbMbMenu.addEventListener("click", () => {
+        jbMbMenuDis.classList.add('jb-Mb-Menu-active');
+    });
+
+    document.addEventListener("click", (e) => {
+        if(e.target == jbMbMenu2){
+            jbMbMenuDis.classList.remove('jb-Mb-Menu-active');
+        }
+    });
+
+
+</script>
+</body>
+</html>

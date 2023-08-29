@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title> Company Profile || job Portal</title>
+</head>
+<body>
+    <header>
+        <!-- ======================
+                Header Area
+        ======================= -->
+
+        <div class="fixed-navbar nav-border hidden lg:flex">
+            <div class="container">
+                <div class="header flex-box">
+                    <div class="jb-logo-menu flex-box w-50">
+                        <div class="jb-logo">
+                            <img src="../assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                        </div>
+                        <div class="jb-nav">
+                            <nav>
+                                <ul>
+                                    <li class="jb-nav-item active"> <a href="#"> Recruiter </a> </li>
+                                    <li class="jb-nav-item"> <a href="#"> Job Seeker </a> </li>
+                                    <li class="jb-nav-item"> <a href="#"> About us </a> </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="jb-hero-registered-recruiter w-50">
+                        <ul>
+                            <li>
+                                <img src="../assets/images/recruiter-dashboard/icon/Media.png" alt="Notifications" width="30" height="30">
+                            </li>
+                            <li>
+                                <div class="jb-recruiter-hero-intro">
+                                    <img src="../assets/images/recruiter-dashboard/icon/headshot 1.png" alt="Recruiter Headshot" width="33" height="33">
+                                    <span class="jb-recruiter-hero-title"> Robert </span>
+                                </div>
+                                <img src="../assets/images/recruiter-dashboard/icon/Icon ionic-ios-arrow-down.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =========================
+            Mobile Nav Start
+        ========================== -->
+        <div id="mb-test" class="jb-mobile-navigation">
+            
+            <div class="jb-logo">
+                <img src="../assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+            </div>
+
+            <div class="jb-hero-registered-recruiter">
+                <ul>
+                    <li>
+                        <img src="../assets/images/recruiter-dashboard/icon/Media.png" alt="Notifications" width="30" height="30">
+                    </li>
+                    <li>
+                        <div class="jb-recruiter-hero-intro">
+                            <img src="../assets/images/recruiter-dashboard/icon/headshot 1.png" alt="Recruiter Headshot" width="33" height="33">
+                        </div>
+                    </li>
+                    <li>
+                        <i id="jb-mobile-nav" class="ri-menu-line"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="jb-mb-menu-show" class="jb-mb-nav-wrapper">
+            <div class="jb-mb-nav-overlay">
+                <div class="jb-mb-menu-panel">
+                    <div class="jb-logo-menu-mobile jb-mb-border-b">
+                        <img src="../assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                        
+                        <i id="tryit" class="ri-close-line"></i>
+
+                    </div>
+                    <nav class="jb-mobile-menu">
+                        <ul>
+                            <li> <a href="about-us.html"> <i class="ri-lock-line"></i> <span> Login </span>  </a></li>
+                            <li> <a href="user-registration.html"> <i class="ri-user-add-line"></i> <span> Register </span> </a> </li>
+                            <li> <a href="#"> <i class="ri-search-line"></i> <span> Search Jobs </span>  </a></li>
+                            <li> <a href="admin-registration.html"> <i class="ri-briefcase-line"></i> <span> Employer </span>  </a> </li>
+                            <li> <a href="about-us.html"> <i class="ri-information-line"></i> <span> About us </span> </a> </li>
+                        </ul>
+                    </nav>
+                    <div class="jb-user-mb-logout">
+                        <a href="#"> <i class="ri-logout-box-line"></i> <span> Logout</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="jb-dashboard-job-post-wrapper">
+            <div class="job-post-container">
+                <!-- =========================
+                    Company Profile Hero
+                ========================== -->
+
+                <div class="jb-dashboard-recruiter-title post-pad-bottom">
+                    <h1 class="jb-form-title"> Company Profile </h1>
+                    <p class="jb-form-desc"> Want to hire a superstar? Post a job now. </p>
+                </div>
+
+                <!-- =========================
+                    Company Profile Form
+                ========================== -->             
+                
+                <div class="jb-dashboard-profile-form-wrapper mt-0">
+                    <form>
+                        <div class="dashboard-company-photo">
+                            <button id="files" onclick="document.getElementById('file').click(); return false;">Company <br> Photo</button>
+                            <input class="hidden" type="file" id="file" name="company-profile-photo">
+                            <span class="profile-photo-hints"> Max file size is 1MB, Minimum dimension: 330x300 And Suitable files are .jpg & .png </span>
+                        </div>
+                        <div class="job-form-group">
+                            <label for="Company Name"> Company Name </label>
+                            <input type="text" name="company-name" placeholder="Company Name">
+                        </div>
+                        <div class="jb-form-group-wrapper">
+                            <div class="job-form-group w-1/2">
+                                <label for="Email"> Email </label>
+                                <input type="email" name="email" placeholder="companyname@gmail.com">
+                            </div>
+                            <div class="job-form-group w-1/2">
+                                <label for="Phone Number"> Phone Number </label>
+                                <input type="text" name="phone-number" placeholder="+880 1670 97XXXX">
+                            </div>
+                        </div>
+                        <div class="jb-form-group-wrapper">
+                            <div class="job-form-group w-1/2">
+                                <label for="Website"> Website </label>
+                                <input type="text" name="website" placeholder="www.website.com">
+                            </div>
+                            <div class="job-form-group w-1/2">
+                                <label for="Team Size"> Team Size </label>
+                                <select name="teamsize" placeholder="Team Size">
+                                    <option value="1">10-20</option>
+                                    <option value="2">20-50</option>
+                                    <option value="3">50-100+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="jb-form-group-wrapper">
+                            <div class="job-form-group w-1/2">
+                                <label for="Established"> Established </label>
+                                <input type="date" id="myDateInput" placeholder="25-05-2010">
+                            </div>
+                            <div class="job-form-group w-1/2">
+                                <label for="Team Size"> Industry </label>
+                                <select name="teamsize" placeholder="Select Industry">
+                                    <option value="1">Technology</option>
+                                    <option value="2">Archietecture</option>
+                                    <option value="3">FinTech</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="job-form-group">
+                            <label for="About Company"> About Company </label>
+                            <textarea name="about-company" placeholder="Write about company"></textarea>
+                        </div>
+                        <div class="job-form-group">
+                            <label for="Address"> Address </label>
+                            <input type="text" class="address-mb" name="address" placeholder="Address">
+                        </div>
+                        <div class="jb-form-group-wrapper">
+                            <div class="job-form-group w-1/2">
+                                <label for="City"> City </label>
+                                <select name="city"  placeholder="Choose City">
+                                    <option value="Dhaka">Dhaka</option>
+                                    <option value="Sylhet">Sylhet</option>
+                                    <option value="Rajshahi">Rajshahi</option>
+                                    <option value="Rangpur">Rangpur</option>
+                                    <option value="Chittagong">Chittagong</option>
+                                </select>
+                            </div>
+                            <div class="job-form-group w-1/2">
+                                <label for="Country"> Country </label>
+                                <select name="country" aria-label="Country" placeholder="Choose Country">
+                                    <option value="1">Bangladesh</option>
+                                    <option value="2">America</option>
+                                    <option value="3">India</option>
+                                    <option value="4">Russia</option>
+                                    <option value="5">UK</option>
+                                    <option value="6">Canada</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="job-form-group">
+                            <label for="Location"> Location </label>
+                            <div class="mapouter">
+                                <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=uttara, dhaka&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            </div>
+                        </div>
+                        <div class="justify-end-mb">
+                            <button type="submit" name="submit" class="post-job-btn"> Save </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="jb-dashboard-profile-form-wrapper space-fix-b">
+                    <form>
+                        <h2 class="company-social-heading"> Social Media </h2>
+                        <div class="jb-form-group-wrapper">
+                            <div class="job-form-group w-1/2">
+                                <label for="Facebook"> Facebook </label>
+                                <input type="url" name="facebook" placeholder="www.facebook.com">
+                            </div>
+                            <div class="job-form-group w-1/2">
+                                <label for="Linkedin"> Linkedin </label>
+                                <input type="url" name="linkedin" placeholder="LinkedIn.com/in">
+                            </div>
+                        </div>
+                        <div class="jb-form-group-wrapper">
+                            <div class="job-form-group w-1/2">
+                                <label for="Twitter"> Twitter </label>
+                                <input type="url" name="twitter" placeholder="www.twitter.com">
+                            </div>
+                            <div class="job-form-group w-1/2">
+                                <label for="Instagram"> Instagram </label>
+                                <input type="url" name="instagram" placeholder="Instagram/yourcompany">
+                            </div>
+                        </div>
+                        <div class="justify-end-mb">
+                            <button type="submit" name="submit" class="post-job-btn"> Save </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+<script>
+    //Sticky navbar
+    const mobileNav = document.getElementById('mb-test');
+    const header = document.querySelector(".fixed-navbar");
+    const toggleClass = "is-sticky";
+
+    window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 100) {
+        header.classList.add(toggleClass);
+        mobileNav.classList.add(toggleClass);
+    } else {
+        header.classList.remove(toggleClass);
+        mobileNav.classList.remove(toggleClass);
+    }
+    });
+    
+    // Mobile Menu
+    let jbMbMenu = document.getElementById('jb-mobile-nav');
+    let jbMbMenu2 = document.getElementById('tryit');
+    let jbMbMenuDis = document.getElementById('jb-mb-menu-show');
+
+    jbMbMenu.addEventListener("click", () => {
+        jbMbMenuDis.classList.add('jb-Mb-Menu-active');
+    });
+
+    document.addEventListener("click", (e) => {
+        if(e.target == jbMbMenu2){
+            jbMbMenuDis.classList.remove('jb-Mb-Menu-active');
+        }
+    });
+
+    // Placeholder for dropdowns
+    const $placeholder = $("select[placeholder]");
+    if ($placeholder.length) {
+    $placeholder.each(function() {
+        const $this = $(this);
+
+        // Initial
+        $this.addClass("placeholder-shown");
+        const placeholder = $this.attr("placeholder");
+        $this.prepend(`<option value="" selected>${placeholder}</option>`);
+
+        // Change
+        $this.on("change", (event) => {
+        const $this = $(event.currentTarget);
+        if ($this.val()) {
+            $this.removeClass("placeholder-shown").addClass("placeholder-hidden");
+        } else {
+            $this.addClass("placeholder-shown").removeClass("placeholder-hidden");
+        }
+        });
+    });
+    }
+    var dateInput = document.getElementById("myDateInput");
+    dateInput.addEventListener("change", function() {
+        this.style.setProperty("color", "#9ca3af", "important");
+    });
+    window.addEventListener("DOMContentLoaded", function() {
+        var dateInput = document.getElementById("myDateInput");
+        dateInput.value = ""; // Clear the value of the date input
+    });
+    
+</script>
+
+
+
+
+</body>
+</html>

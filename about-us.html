@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> Job Portal </title>
+</head>
+<body>
+    
+    <header>
+            <!-- ======================
+                    Header Area
+            ======================= -->
+
+            <div class="fixed-navbar jb-other-page-nav jb-other--page-nav hidden lg:flex">
+                <div class="container">
+                    <div class="header flex-box">
+                        <div class="jb-logo-menu flex-box w-50">
+                            <div class="jb-logo">
+                                <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                            </div>
+                            <div class="jb-nav">
+                                <nav>
+                                    <ul>
+                                        <li class="jb-nav-item"> <a href="#"> Recruiter </a> </li>
+                                        <li class="jb-nav-item"> <a href="#"> Job Seeker </a> </li>
+                                        <li class="jb-nav-item active"> <a href="#"> About us </a> </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="jb-hero-user-panel w-50">
+                            <ul class="nav-flex">
+                                <li> <a href="login.html" class="jb-user-login"> Login </a> </li>
+                                <li> <a href="#"> <button class="jb-user-registration" type="button"> Registration </button> </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =========================
+                Mobile Nav Start
+            ========================== -->
+            <div id="mb-test" class="jb-mobile-navigation about-p-nav flex lg:hidden">
+                
+                <div class="jb-logo">
+                    <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                </div>
+                
+                <i id="jb-mobile-nav" class="ri-menu-line"></i>
+            </div>
+            <div id="jb-mb-menu-show" class="jb-mb-nav-wrapper">
+                <div class="jb-mb-nav-overlay">
+                    <div class="jb-mb-menu-panel">
+                        <div class="jb-logo-menu-mobile jb-mb-border-b">
+                            <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                            
+                            <i id="tryit" class="ri-close-line"></i>
+
+                        </div>
+                        <nav class="jb-mobile-menu">
+                            <ul>
+                                <li> <a href="about-us.html"> <i class="ri-lock-line"></i> <span> Login </span>  </a></li>
+                                <li> <a href="user-registration.html"> <i class="ri-user-add-line"></i> <span> Register </span> </a> </li>
+                                <li> <a href="#"> <i class="ri-search-line"></i> <span> Search Jobs </span>  </a></li>
+                                <li> <a href="admin-registration.html"> <i class="ri-briefcase-line"></i> <span> Employer </span>  </a> </li>
+                                <li> <a href="about-us.html"> <i class="ri-information-line"></i> <span> About us </span> </a> </li>
+                            </ul>
+                        </nav>
+                        <div class="jb-user-mb-logout">
+                            <a href="#"> <i class="ri-logout-box-line"></i> <span> Logout</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <!-- ===========================
+            Image Gallery
+    =========================== -->
+    <section>
+        <div class="jb-about-image-gallery-wrapper">
+            <div class="container">
+                <div class="jb-about-image-gallery">
+                    <ul class="img-mb-fix-w">
+                        <li class="hidden md:inline-block">
+                            <img class="mb-[7px] h-[161px]" src="assets/images/about-us/eco-style-sunlit-2x.png" width="285" height="161" alt="Eco Friendly Office">
+                            <img class="h-[130px]" src="assets/images/about-us/close-up-woman-working-laptop@2x.png" width="285" height="130" alt="Women in Office">
+                        </li>
+                        <li class="hidden md:inline-block">
+                            <img class="h-[298px]" src="assets/images/about-us/successful-business-people-standing-office.png" width="294" height="298" alt="Business People">
+                        </li>
+                        <li>
+                            <img class="h-[298px]" src="assets/images/about-us/woman-working-office-computer.png" width="294" height="298" alt="Women Working">
+                        </li>
+                        <li>
+                            <img class="mb-[7px] h-[130px]" src="assets/images/about-us/close-up-woman-working-laptop@2x.png" width="285" height="130" alt="Women in Office">
+                            <img class="h-[163px]" src="assets/images/about-us/eco-style-sunlit-2x.png" width="285" height="161" alt="Eco Friendly Office">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+              Who We Are
+    ============================ -->
+
+    <section>
+        <div class="jb-who-we-are-wrapper">
+            <div class="container">
+                <h1 class="section-tittle pb-0"> Who We Are? </h1>
+                <p class="jb-about-section-title-desc fixing-pb"> 
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.     
+                </p>
+                <div class="jb-who-we-r-content-body xtra-pt-about">
+                    <div class="jb-who-we-r-column w-[35%]">
+                        <img src="assets/images/about-us/business-people-standing-row-with-thumbs-up.png" width="400" height="234" alt="Business People Ready For Service">
+                    </div>
+                    <div class="jb-who-we-r-column w-[65%] pl-[8.438rem]">
+                        <h2 class="jb-who-we-r-column-title who-we-r-sub-title"> Why job Finder? </h2>
+                        <p class="jb-who-we-r-column-desc">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam undow rewmer secape. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+              How We Help
+    ============================ -->
+    <section>
+        <div class="jb-who-we-are-section-wrapper">
+            <div class="container">
+                <h2 class="section-tittle pb-0"> How We Help? </h2>
+                <p class="jb-about-section-title-desc pb-0"> 
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.     
+                </p>
+                <div class="jb-how-we-help-content-body flex-box">
+                    <div class="jb-how-we-help-content-item">
+                        <div class="jb-how-bg-shape"></div>
+                        <div class="jb-how-we-inner">
+                            <div class="jb-how-we-icon-box">
+                                <img src="assets/images/about-us/icon/create-account.svg" width="86" height="84" alt="Create Account">
+                            </div>
+                            <h3 class="jb-how-we-title hidden md:block"> Create Account </h3>
+                        </div>
+                        <div class="mb-box block md:hidden">
+                            <h3 class="jb-how-we-title"> Create Account </h3>
+                       </div>
+                    </div>
+                    <div class="jb-how-we-help-content-item">
+                        <div class="jb-how-bg-shape"></div>
+                        <div class="jb-how-we-inner">
+                            <div class="jb-how-we-icon-box">
+                                <img src="assets/images/about-us/icon/prepare-cv.svg" width="86" height="84" alt="Prepare CV">
+                            </div>
+                            <h3 class="jb-how-we-title hidden md:block"> Prepare CV </h3>
+                        </div>
+                        <div class="mb-box block md:hidden">
+                            <h3 class="jb-how-we-title"> Prepare CV </h3>
+                       </div>
+
+                    </div>
+
+                    <div class="jb-how-we-help-content-item">
+                        <div class="jb-how-bg-shape"></div>
+                        <div class="jb-how-we-inner">
+                            <div class="jb-how-we-icon-box">
+                                <img src="assets/images/about-us/icon/search-job.svg" width="86" height="84" alt="Search Jobs">
+                            </div>
+                            <h3 class="jb-how-we-title hidden md:block"> Search Jobs </h3>
+                        </div>
+                        <div class="mb-box block md:hidden">
+                            <h3 class="jb-how-we-title"> Search Jobs </h3>
+                       </div>
+                    </div>
+                    <div class="jb-how-we-help-content-item">
+                        <div class="jb-how-bg-shape"></div>
+                        <div class="jb-how-we-inner">
+                            <div class="jb-how-we-icon-box">
+                                <img src="assets/images/about-us/icon/apply-job.svg" width="86" height="84" alt="Apply Jobs">
+                            </div>
+                            <h3 class="jb-how-we-title hidden md:block"> Apply Jobs </h3>
+                        </div>
+                       <div class="mb-box block md:hidden">
+                            <h3 class="jb-how-we-title"> Apply Jobs </h3>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================
+              Meet Out Team
+    ============================ -->
+    <section>
+        <div class="jb-our-team-section-wrapper">
+            <div class="container">
+                <h3 class="section-tittle pb-0"> Meet Our Team </h3>
+                <p class="jb-about-section-title-desc pb-0"> 
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.    
+                </p>
+                <div class="jb-our-team-content-body flex-box">
+                    <div class="jb-our-team-item">
+                        <div class="jb-our-team-inner-controller">
+                            <div class="jb-our-team-inner-shape"></div>
+                            <div class="jb-our-team-item-inner">
+                                <img src="assets/images/about-us/team/team1.png" width="109" height="109" alt="Team Member">
+                                <div class="jb-our-team-m-details">
+                                    <h4 class="jb-team-member-title"> Macmilan </h4>
+                                    <p class="jb-team-member-designation"> Software Engineer </p>
+                                </div>
+                                <div class="jb-our-team-social-profile">
+                                    <span><i class="ri-facebook-fill"></i></span>
+                                    <span><i class="ri-linkedin-fill"></i></span>
+                                    <span><i class="ri-twitter-fill"></i></span>
+                                    <span><i class="ri-instagram-line"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jb-our-team-item">
+                        <div class="jb-our-team-inner-controller">
+                            <div class="jb-our-team-inner-shape team-shape-2"></div>
+                            <div class="jb-our-team-item-inner">
+                                <img src="assets/images/about-us/team/team2.png" width="109" height="109" alt="Team Member">
+                                <div class="jb-our-team-m-details">
+                                    <h4 class="jb-team-member-title"> Macmilan </h4>
+                                    <p class="jb-team-member-designation"> Software Engineer </p>
+                                </div>
+                                <div class="jb-our-team-social-profile">
+                                    <span><i class="ri-facebook-fill"></i></span>
+                                    <span><i class="ri-linkedin-fill"></i></span>
+                                    <span><i class="ri-twitter-fill"></i></span>
+                                    <span><i class="ri-instagram-line"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jb-our-team-item">
+                        <div class="jb-our-team-inner-controller">
+                            <div class="jb-our-team-inner-shape"></div>
+                            <div class="jb-our-team-item-inner">
+                                <img src="assets/images/about-us/team/team3.png" width="109" height="109" alt="Team Member">
+                                <div class="jb-our-team-m-details">
+                                    <h4 class="jb-team-member-title"> Macmilan </h4>
+                                    <p class="jb-team-member-designation"> Software Engineer </p>
+                                </div>
+                                <div class="jb-our-team-social-profile">
+                                    <span><i class="ri-facebook-fill"></i></span>
+                                    <span><i class="ri-linkedin-fill"></i></span>
+                                    <span><i class="ri-twitter-fill"></i></span>
+                                    <span><i class="ri-instagram-line"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jb-our-team-item">
+                        <div class="jb-our-team-inner-controller">
+                            <div class="jb-our-team-inner-shape team-shape-2"></div>
+                            <div class="jb-our-team-item-inner">
+                                <img src="assets/images/about-us/team/team4.png" width="109" height="109" alt="Team Member">
+                                <div class="jb-our-team-m-details">
+                                    <h4 class="jb-team-member-title"> Macmilan </h4>
+                                    <p class="jb-team-member-designation"> Software Engineer </p>
+                                </div>
+                                <div class="jb-our-team-social-profile">
+                                    <span><i class="ri-facebook-fill"></i></span>
+                                    <span><i class="ri-linkedin-fill"></i></span>
+                                    <span><i class="ri-twitter-fill"></i></span>
+                                    <span><i class="ri-instagram-line"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================
+        Worked With Section
+    ============================ -->
+
+    <section>
+        <div class="jb-worked-with-wrapper">
+            <div class="container">
+                <h3 class="section-tittle pb-0"> Worked With </h3>
+                <p class="jb-about-section-title-desc pb-0"> 
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.   
+                </p>
+                <div class="jb-work-clients-slider">
+                    <ul>
+                        <li> <img src="assets/images/about-us/clients/aven.png" alt="Aven"> </li>
+                        <li> <img src="assets/images/about-us/clients/circle.png" alt="Circle"> </li>
+                        <li> <img src="assets/images/about-us/clients/treva@2x.png" alt="Treva"> </li>
+                        <li> <img src="assets/images/about-us/clients/hex-lab@2x.png" alt="Hexlab"> </li>
+                        <li> <img src="assets/images/about-us/clients/1 pain relife.png" alt="Pain Releif"> </li>
+                        <li> <img src="assets/images/about-us/clients/light-ai.png" alt="Light AI"> </li>
+                        <li> <img src="assets/images/about-us/clients/muzica@2x.png" alt="Muzica"> </li>
+                        <li> <img src="assets/images/about-us/clients/velocity-9@2x.png" alt="Velocity"> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================
+        Subscriptions
+    ============================ -->
+
+    <section>
+        <div class="jb-subscription-wrapper">
+            <div class="container">
+                <div class="subscription-content-body bg-[url('../images/about-us/subscribe-bg.svg')] bg-cover">
+                    <div class="jb-subscription-content">
+                        <h3> New Things Will Always Update Frequently </h3>
+                        <form>
+                            <div class="subscription-form-control">
+                                <input type="email" name="subscribe-email" placeholder="Enter Your Email">
+                                <i class="ri-mail-fill"></i>
+                                <button type="submit" name="Submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================
+                Footer
+    =========================== -->
+
+    <footer>
+        <div class="jb-footer-wrapper">
+            <div class="container px-mb">
+                <div class="jb-footer-content jb-m-l-border">
+                    <div class="jb-footer-logo-box">
+                        <img src="assets/images/logo/footer-logo.svg" alt="Footer Logo">
+                        <span class="jb-social-icon-box"> 
+                            <i class="ri-facebook-fill"></i> <i class="ri-twitter-fill"></i> <i class="ri-instagram-line"></i> <i class="ri-linkedin-fill"></i>
+                        </span>
+                    </div>
+                    <div class="jb-footer-content-body main-layout">
+                        <ul class="jb-footer-list main-l-footer m-l-fix">
+                            <li id="jb-footer-list-target" class="jb-footer-nav-header main-l-footer-li"> <span> Recruiter </span> <span class="rotateIcon"><i class="ri-arrow-down-s-line"></i></span>  </li>
+                            <li class="jb-footer-item jb-i-none"> Post a Job </li>
+                            <li class="jb-footer-item jb-i-none"> Featured Job </li>
+                            <li class="jb-footer-item jb-i-none"> Browse Candidates </li>
+                            <li class="jb-footer-item jb-i-none"> Recruiter Dashboard </li>
+                        </ul>
+                        <ul class="jb-footer-list main-l-footer m-l-fix">
+                            <li class="jb-footer-nav-header main-l-footer-li"> <span> Job Seeker </span> <span class="rotateIcon"><i class="ri-arrow-down-s-line"></i></span>  </li>
+                            <li class="jb-footer-item jb-i-none"> Post a Job </li>
+                            <li class="jb-footer-item jb-i-none"> Featured Job </li>
+                            <li class="jb-footer-item jb-i-none"> Browse Candidates </li>
+                            <li class="jb-footer-item jb-i-none"> Recruiter Dashboard </li>
+                        </ul>
+                        <ul class="jb-footer-list main-l-footer m-l-fix">
+                            <li class="jb-footer-nav-header main-l-footer-li"> <span> About Company </span> <span class="rotateIcon"><i class="ri-arrow-down-s-line"></i></span>  </li>
+                            <li class="jb-footer-item jb-i-none"> Post a Job </li>
+                            <li class="jb-footer-item  jb-i-none"> Featured Job </li>
+                            <li class="jb-footer-item jb-i-none"> Browse Candidates </li>
+                            <li class="jb-footer-item jb-i-none"> Recruiter Dashboard </li>
+                        </ul>
+                        <ul class="jb-footer-list main-l-footer m-l-fix">
+                            <li class="jb-footer-nav-header main-l-footer-li"> <span> Contact Us </span> <span class="rotateIcon"><i class="ri-arrow-down-s-line"></i></span>  </li>
+                            <li class="jb-footer-contact jb-i-none"> House #32, Road #12, Sector #9, Uttara, Dhaka. </li>
+                            <li class="jb-footer-contact jb-i-none"> E: jobportal@gmail.com <br> W: www.jobportal.com</li>
+                            <li class="jb-footer-nav-subscribe jb-i-none-2"> Subscribe </li>
+                            <li class="jb-footer-subscribe-box main-l-subs jb-i-none-2"> 
+                                <form>
+                                    <input type="email" name="subscription-email" placeholder="Enter your email">
+                                    <i class="ri-arrow-right-line"></i>
+                                </form>
+                            </li>
+                        </ul>
+                        <div class="mb-footer-subdcribe-m-l">
+                            <div class="mb-footer-subdcribe-inner">
+                                <span class="mb-main-l-footer-label"> Subscribe </span>
+                                <form>
+                                    <input type="email" name="subscription-email" placeholder="Enter your email">
+                                    <i class="ri-arrow-right-line"></i>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jb-footer-copyright px-mb-enable m-l-footer-d-none">
+                    <p> © 2023 <span>Job Portal</span> | Designed by <span>Arc Studio</span> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+                
+
+    <script>
+        
+        const mobileNav = document.getElementById('mb-test');
+
+        const header = document.querySelector(".fixed-navbar");
+        const toggleClass = "is-sticky";
+
+        window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > 150) {
+            header.classList.add(toggleClass);
+            mobileNav.classList.add(toggleClass);
+        } else {
+            header.classList.remove(toggleClass);
+            mobileNav.classList.remove(toggleClass);
+        }
+        });
+
+        
+        let jbMbMenu = document.getElementById('jb-mobile-nav');
+        let jbMbMenu2 = document.getElementById('tryit');
+        let jbMbMenuDis = document.getElementById('jb-mb-menu-show');
+
+        jbMbMenu.addEventListener("click", () => {
+            jbMbMenuDis.classList.add('jb-Mb-Menu-active');
+        });
+
+        document.addEventListener("click", (e) => {
+            if(e.target == jbMbMenu2){
+                jbMbMenuDis.classList.remove('jb-Mb-Menu-active');
+            }
+        });
+
+        // Get all <ul> elements with class 'jb-footer-list'
+            let ulLists = document.querySelectorAll('.m-l-fix');
+
+        ulLists.forEach((ul) => {
+        let footerTrigger = ul.querySelector('.main-l-footer-li');
+        let footerExpand = ul.querySelectorAll('.jb-i-none');
+        let arrowIcon = ul.querySelector('.rotateIcon');
+
+        footerTrigger.addEventListener('click', () => {
+            // Close all other open lists
+            ulLists.forEach((otherUl) => {
+            if (otherUl !== ul) {
+                let otherFooterExpand = otherUl.querySelectorAll('.jb-i-none');
+                let otherArrowIcon = otherUl.querySelector('.rotateIcon');
+
+                otherFooterExpand.forEach((expandItem) => {
+                expandItem.classList.remove('main-l-expanded-Nav');
+                });
+
+                otherArrowIcon.classList.remove('rotate');
+            }
+            });
+
+            // Toggle visibility of list items and rotate the arrow icon
+            footerExpand.forEach((expandItem) => {
+            expandItem.classList.toggle('main-l-expanded-Nav');
+            });
+
+            arrowIcon.classList.toggle('rotate');
+        });
+        });
+
+
+    </script>
+
+</body>
+</html>

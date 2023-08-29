@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="850" height="875.5" viewBox="0 0 850 875.5">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_644" data-name="Rectangle 644" width="822" height="876" transform="translate(-0.416)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_645" data-name="Rectangle 645" width="107" height="98" transform="translate(-0.023)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-Artboard_2">
+      <rect width="850" height="875.5"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_2" data-name="Artboard – 2" clip-path="url(#clip-Artboard_2)">
+    <g id="Group_200" data-name="Group 200" transform="translate(-931.584)">
+      <g id="Mask_Group_112" data-name="Mask Group 112" transform="translate(960)" clip-path="url(#clip-path)">
+        <rect id="Rectangle_271" data-name="Rectangle 271" width="907.38" height="879.845" rx="121" transform="translate(233.304 -209.06) rotate(17)" fill="#34a853"/>
+      </g>
+      <g id="Mask_Group_113" data-name="Mask Group 113" transform="translate(1674.607)" clip-path="url(#clip-path-2)">
+        <g id="Ellipse_54" data-name="Ellipse 54" transform="translate(27.056 -79.921)" fill="none" stroke="#fff" stroke-width="8">
+          <ellipse cx="79.921" cy="79.921" rx="79.921" ry="79.921" stroke="none"/>
+          <ellipse cx="79.921" cy="79.921" rx="75.921" ry="75.921" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

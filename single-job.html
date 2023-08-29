@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> Job Search : Job Portal </title>
+</head>
+<body>
+
+<!-- ======================
+        Header Area
+======================= -->
+
+<header class="h-[72px]">
+    <div class="fixed-navbar jb-other-page-nav hidden lg:flex">
+        <div class="container">
+            <div class="header flex-box">
+                <div class="jb-logo-menu flex-box w-50">
+                    <div class="jb-logo">
+                        <a href="index.html"> <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo"> </a>
+                    </div>
+                    <div class="jb-nav">
+                        <nav>
+                            <ul>
+                                <li class="jb-nav-item active"> <a href="#"> Recruiter </a> </li>
+                                <li class="jb-nav-item"> <a href="#"> Job Seeker </a> </li>
+                                <li class="jb-nav-item"> <a href="#"> About us </a> </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="jb-hero-user-panel w-50">
+                    <ul class="nav-flex">
+                        <li> <a href="login.html" class="jb-user-login"> Login </a> </li>
+                        <li> <a href="#"> <button class="jb-user-registration" type="button"> Registration </button> </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================
+        Mobile Nav Start
+    ========================== -->
+    <div id="mb-test" class="jb-mobile-navigation jb-other-page-mb-menu flex lg:hidden">
+        
+        <div class="jb-logo">
+            <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+        </div>
+        
+        <i id="jb-mobile-nav2" class="ri-menu-line"></i>
+    </div>
+
+    <div id="jb-mb-menu-show2" class="jb-mb-nav-wrapper">
+        <div class="jb-mb-nav-overlay">
+            <div class="jb-mb-menu-panel">
+                <div class="jb-logo-menu-mobile jb-mb-border-b">
+                    <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                    
+                    <i id="tryit" class="ri-close-line"></i>
+
+                </div>
+                <nav class="jb-mobile-menu">
+                    <ul>
+                        <li> <a href="about-us.html"> <i class="ri-lock-line"></i> <span> Login </span>  </a></li>
+                        <li> <a href="user-registration.html"> <i class="ri-user-add-line"></i> <span> Register </span> </a> </li>
+                        <li> <a href="#"> <i class="ri-search-line"></i> <span> Search Jobs </span>  </a></li>
+                        <li> <a href="admin-registration.html"> <i class="ri-briefcase-line"></i> <span> Employer </span>  </a> </li>
+                        <li> <a href="about-us.html"> <i class="ri-information-line"></i> <span> About us </span> </a> </li>
+                    </ul>
+                </nav>
+                <div class="jb-user-mb-logout">
+                    <a href="#"> <i class="ri-logout-box-line"></i> <span> Logout</span> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</header>
+
+<!-- ===============================
+        Single Job Display Area
+================================ -->
+
+<section>
+    <div class="single-job-show-wrapper">
+        <div class="container">
+            <div class="jb-parent-search">
+                <h1 class="jb-parent-search-title"> Find Your Ideal Job <span> Right Away!! </span> </h1>
+                <div class="hidden md:block jb-parent-search-box">
+                    <form>
+                        <div class="jb-search-form-group">
+                            <div class="search-by-text">
+                                <i class="ri-search-line"></i>
+                                <input type="text" name="searhc-by-text" placeholder="Enter skill, designation etc..">
+                            </div>
+                            <div class="search-by-location">
+                                <i class="ri-map-pin-line"></i>
+                                <input type="text" name="search-by-location" placeholder="Location">
+                            </div>
+                            <div class="search-box-submit">
+                                <a href="single-job.html"> <button type="button" name="search-job"> Search </button> </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="block md:hidden mb-jb-parent-search-box">
+                    <form>
+                        <div class="mb-search-form-filter">
+                            <span> Search </span> 
+                            <div id="filter-for-mb-trigger">
+                                <i class="ri-equalizer-line"></i>
+                            </div>
+                        </div>
+                        <div class="jb-search-form-group">
+                            <div class="jb-mb-full-searc-form search-by-text">
+                                <i class="ri-search-line"></i>
+                                <input type="text" name="searhc-by-text" placeholder="Job title">
+                            </div>
+                        </div>
+                        <div class="search-box-submit">
+                            <a href="single-job.html"> <button type="button" name="search-job"> Search </button> </a>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- ======================
+                    Mobile Filter Panel
+                ======================== -->
+
+                <div id="filter-for-mobile" class="hidden md:hidden">
+                    <div class="jb-filter-for-mb-content-body">
+                        <h3> Filter jobs </h3>
+                        <form>
+                            <div class="jb-filter-4-mb-search-upper">
+                                <div class="jb-filter-4-mb-tags">
+                                    <ul>
+                                        <li>
+                                            <span> Full Time </span> 
+                                            <i class="ri-close-line"></i>
+                                        </li>
+                                        <li>
+                                            <span> Dhaka </span>
+                                            <i class="ri-close-line"></i>
+                                        </li>
+                                        <li>
+                                            <span> Marketing </span>
+                                            <i class="ri-close-line"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="search-by-location">
+                                    <i class="ri-map-pin-line"></i>
+                                    <select class="search-location" id="SearchLocation">
+                                        <option> Location </option>
+                                        <option> Choose Location </option>
+                                        <option> Choose Location </option>
+                                        <option> Choose Location </option>
+                                        <option> Choose Location </option>
+                                        <option> Choose Location </option>
+                                        <option> Choose Location </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="jb-filter-4-mb-v-choice">
+                                <div class="tabs-block">
+                                    <div id="tabs-section" class="tabs">
+                                        <ul class="tab-head">
+                                            <li>
+                                                <a href="#tab-1" class="tab-link active"> <span class="tab-label">Job Type</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#tab-2" class="tab-link"> <span class="tab-label">Job Categories</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#tab-3" class="tab-link"> <span class="tab-label">Experiance</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#tab-4" class="tab-link"> <span class="tab-label">Salary</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#tab-5" class="tab-link"> <span class="tab-label">Sort by</span></a>
+                                            </li>
+                                        </ul>
+            
+                                        <section id="tab-1" class="tab-body entry-content active active-content">
+                                            <div class="jb-check-job-type">
+                                                <div class="jb-filter-checkbox">
+                                                    <label class="c-container">Full Time
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <span> 125 </span>
+                                                </div>
+                                                <div class="jb-filter-checkbox">
+                                                    <label class="c-container">Part Time
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <span> 85 </span>
+                                                </div>
+                                                <div class="jb-filter-checkbox">
+                                                    <label class="c-container">Remote
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <span> 280 </span>
+                                                </div>
+                                            </div>
+                                        </section>
+            
+                                        <section id="tab-2" class="tab-body entry-content">
+                                            <div class="jb-filter-font-fix jb-check-job-type">
+                                                <label class="c-container">Accounting/Finance
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark checked"></span>
+                                                </label>
+            
+                                                <label class="c-container">Production/Operation
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+            
+                                                <label class="c-container">Engineer/Architects
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+            
+                                                <label class="c-container">IT & Telecommunication
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+            
+                                                <label class="c-container">IT & Telecommunication
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+            
+                                                <label class="c-container">Marketing/Sales
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+                                                <p class="filter-data-more"> View More </p>
+                                            </div>
+                                        </section>
+            
+                                        <section id="tab-3" class="tab-body entry-content">
+                                            <div class="jb-filter-font-fix jb-check-job-type">
+                                                <label class="c-container">Entry Levels
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark checked"></span>
+                                                </label>
+            
+                                                <label class="c-container">Intermediate
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+            
+                                                <label class="c-container">Mid Level
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+            
+                                                <label class="c-container">Expert
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+            
+                                            </div>
+                                        </section>
+            
+                                        <section id="tab-4" class="tab-body entry-content">
+                                            <div class="jb-check-job-type">
+                                                <div class="filter-parent-slider">
+                                                    <span class="jb-slider-parent"></span>
+                                                </div>
+                                                <p class="jb-filter-number"> <span class="jb-filter-slider-value"> 0 </span> <span class="jb-filter-slider-value"> 5,00,000 </span> </p>
+                                            </div>
+                                        </section>
+            
+                                        <section id="tab-5" class="tab-body entry-content">
+                                            <div class="jb-filter-checkbox jb-filter-by-sort">
+                                                <ul>
+                                                    <li>  
+                                                        <span> Jobs per page </span>
+                                                        <select class="sort-by-page"> 
+                                                            <option value="20">20</option> 
+                                                            <option value="20">30</option> 
+                                                            <option value="20">50</option> 
+                                                            <option value="20">100</option>    
+                                                        </select> 
+                                                    </li>
+                                                    <li>  
+                                                        <span> Sort by </span>
+                                                        <select class="sort-by-page"> 
+                                                            <option value="Experiance">Experiance</option> 
+                                                            <option value="Skill">Skill</option> 
+                                                            <option value="Salary">Salary</option> 
+                                                            <option value="Experiance">Experiance</option>    
+                                                        </select> 
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="jb-filter-4-mb-action">
+                                <button type="button" id="close-filter-mb-panel" class="close-filter-mb-panel"> Cancel </button>
+                                <button type="submit" class="submit-filter-mb-panel"> Apply </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="jb-single-job-details">
+
+                <!-- ===============================
+                        Single Job Item Display
+                ================================ -->
+
+                <div class="jb-filtered-job-item jb-single-job-item jb-single-job-item-mb">
+                    <div class="filtered-jobs-content-body filtered-flex single-filtered-flex single-job-column-left">
+                        <div class="filtered-jobs-icon-box">
+                            <img src="assets/images/company-photo/filter-job-by-company.png" alt="Filtered Jobs Icon" >
+                        </div>
+                        <div class="jb-job-filtered-text-details single-job-details-box jb-job-filtered-text-details-mb">
+                            <div class="compnay-header-info">
+                                <h5 class="filtered-heading-color second-heading"> Software Engineer </h5>
+                                <span class="hidden md:block job-type-status"> Full Time </span>
+                            </div>
+                            <div class="jb-company-ratings">
+                                <p class="second-sub-heading filtered-subheading-color"> Company Name </p>
+                                <p class="company-ratings"> <span> 3.8  <span class="jb-star-ratings"> <i class="ri-star-fill"></i></span> </span> </p>
+                                <p class="company-reviews"> 127 Reviews </p>
+                            </div>
+                            <ul class="jb-filtered-job-type single-jb-filtered-job-type jb-filtered-job-type-mb">
+                                <li> <i class="ri-map-pin-line"></i> <span> Dhaka, Bangladesh </span> </li>
+                                <li> <i class="ri-briefcase-line"></i> <span> 2 Years </span> </li>
+                                <li> <i class="ri-money-dollar-circle-line"></i> <span> 2,000 - 3,000 </span> </li>
+                            </ul>
+                            <p class="jb-job-required-skill">
+                                <span>Skill:</span> JavaScript, Linux/Unix, Perl, Shell, Java, Ruby, PHP, Python, Hands-On SQL....
+                            </p>
+                            <p class="block md:hidden">
+                                <span class="job-type-status job-type-status-mb"> Full Time </span>
+                            </p>
+                            <div class="block md:hidden jb-single-job-ction-box jb-single-job-ction-box-mb">
+                                <button class=" apply-now-btn" type="button"> Apply Now</button> 
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="jb-single-job-action single-job-column-right single-job-column-right-mb">
+                        <div class="single-column-content-body">
+                            <div class="jb-single-jb-action-bos-pos jb-single-job-ction-box">
+                                <button class="hidden md:block apply-now-btn" type="button"> Apply Now</button> 
+                                <div class="jb-filtered-favourite">
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                            </div>
+                            <div class="hidden md:block jb-single-hit-details">
+                                <p class="jb-filtered-posted-date flex-box"> <span class="border-between-them"> Job Applicants: 622 </span> <span>Posted: 2 days ago </span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jb-single-jb-mb-total-hit block md:hidden">
+                    <div class="jb-single-hit-details">
+                        <p class="jb-filtered-posted-date flex-box"> <span class="border-between-them"> Job Applicants: 622 </span> <span>Posted: 2 days ago </span> </p>
+                    </div>
+                </div>
+
+                <!-- ===============================
+                      Single Job Details Area
+                ================================ -->
+                
+                <div class="jb-mb-job-desc-open md:hidden">
+                    <a id="jb-descriptionId" class="jb-mb-desc-link activeTab" href="#desc-tab">
+                        Job Description
+                    </a>
+                    <a id="jb-benefitsId" class="jb-mb-benefits-link" href="#benefits-tab">
+                        Benefits
+                    </a>
+                </div>
+                <div id="desc-tab" class="jb-single-job-spec-wrapper">
+                    <div class="jb-single-job-specifications">
+                        <h2 class="single-job-heading"> Job Description </h2>
+                        <p class="single-job-desc">
+                            As a Product Designer, you will work within a Product Delivery Team fused with UX, engineering, product and data talent. You will help the team design beautiful interfaces that solve business challenges for our clients. We work with a number of Tier 1 banks on building web-based applications for AML, KYC and Sanctions List management workflows. This role is ideal if you are looking to segue your career into the FinTech or Big Data arenas.
+                        </p>
+
+                        <h2 class="single-job-heading"> Key Responsibilities </h2>
+                        <ul class="single-jb-desc">
+                            <li> Be involved in every step of the product design cycle from discovery to developer handoff and user acceptance testing.</li>
+                            <li> Work with BAs, product managers and tech teams to lead the Product Design. </li>
+                            <li> Maintain quality of the design process and ensure that when designs are translated into code they accurately reflect the design specifications. </li>
+                            <li> Accurately estimate design tickets during planning sessions. </li>
+                            <li> Contribute to sketching sessions involving non-designersCreate, iterate and maintain UI deliverables including sketch files, style guides, high fidelity prototypes, micro interaction specifications and pattern libraries. </li>
+                            <li> Ensure design choices are data led by identifying assumptions to test each sprint, and work with the analysts in your team to plan moderated usability test sessions. </li>
+                            <li> Design pixel perfect responsive UI’s and understand that adopting common interface patterns is better for UX than reinventing the wheel. </li>
+                            <li> Present your work to the wider business at Show & Tell sessions. </li>
+                        </ul>
+                        <h2 class="single-job-heading"> Skill & Experience </h2>
+                        <ul class="single-jb-desc single-jb-desc-mb-0">
+                            <li> You have at least 3 years’ experience working as a Product Designer. </li>
+                            <li> You have experience using Sketch and InVision or Framer X. </li>
+                            <li> You have some previous experience working in an agile environment. You are familiar using Jira and Confluence in your workflow. </li>
+                        </ul>
+                    </div>
+                    <div id="benefits-tab" class="jb-single-job-spec-right-sidebar">
+                        <div class="jb-single-jb-benefits">
+                            <h2 class="single-job-heading"> Benefits </h2>
+                            <div class="jb-single-jb-benefits-box">
+                                <ul>
+                                    <li> 
+                                        <div class="single-icon-box">
+                                            <img src="assets/images/specifications-icon/bonus@2x.png" width="32" height="32" alt="Benefits Icon"> 
+                                        </div> 
+                                        Bonus 
+                                    </li>
+                                    <li> 
+                                        <div class="single-icon-box">
+                                            <img src="assets/images/specifications-icon/food.png" width="34" height="34" alt="Benefits Icon"> 
+                                        </div> 
+                                        Free Food 
+                                    </li>
+                                    <li> 
+                                        <div class="single-icon-box">
+                                            <img src="assets/images/specifications-icon/private-car.png" width="48" height="25" alt="Benefits Icon"> 
+                                        </div> 
+                                        Free Transport
+                                    </li>
+                                    <li> 
+                                        <div class="single-icon-box">
+                                            <img src="assets/images/specifications-icon/kn.png" width="32" height="32" alt="Benefits Icon"> 
+                                        </div> 
+                                        Job Training
+                                    </li>
+                                    <li> 
+                                        <div class="single-icon-box">
+                                            <img src="assets/images/specifications-icon/nature@2x.png" width="32" height="32" alt="Benefits Icon"> 
+                                        </div> 
+                                        Health Insurance 
+                                    </li>
+                                    <li> 
+                                        <div class="single-icon-box">
+                                            <img src="assets/images/specifications-icon/strength@2x.png" width="32" height="32" alt="Benefits Icon"> 
+                                        </div> 
+                                        Gymnasium
+                                    </li>
+                                    <li> 
+                                        <div class="single-icon-box">
+                                            <img src="assets/images/specifications-icon/sunbed@2x.png" width="32" height="32" alt="Benefits Icon"> 
+                                        </div> 
+                                        Team Outings
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="jb-single-company-about">
+                            <h2 class="single-job-heading"> About Company </h2>
+                            <p class="single-job-desc">
+                                As a Product Designer, you will work within a Product Delivery Team fused with UX, engineering, product and data talent.
+                            </p>
+                        </div>
+                        <div class="jb-single-share-box">
+                            <p> Share this job </p>
+                            <ul> 
+                                <li class="facebook"> <i class="ri-facebook-fill"></i> </li>
+                                <li class="twitter"> <i class="ri-twitter-fill"></i> </li>
+                                <li class="whatsapp"> <i class="ri-whatsapp-line"></i> </li>
+                                <li class="linkedin"> <i class="ri-linkedin-fill"></i> </li>
+                            </ul>
+                            <button type="button"> Report </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===============================
+                    Single Job Page Similar Jobs
+                ================================ -->
+                <div class="jb-similar-jobs-wrapper">
+                    <div class="similar-jobs-head">
+                        <h2> Similar jobs </h2>
+                        <span class="hidden md:inline-block similar-jobs-prev-next"> <i class="ri-arrow-drop-left-line"></i> <i class="ri-arrow-drop-right-line"></i> </span>
+                    </div>
+                    <div class="all-similar-jobs">
+                        <div class="jb-similar-jobs-item">
+                            <img class="jb-similar-jobs-item-photo" src="assets/images/similar-jobs/similar-jobs-icon.png" alt="Similar Jobs" width="29" height="29">
+                            <div class="similar-job-det-display">
+                                <h3 class="similar-job-title"> Product Designer </h3>
+                                <p class="similar-job-sub-text"> <i class="ri-map-pin-line"></i> Dhaka, Bangladesh </p>
+                                <p class="similar-job-sub-text"> <i class="ri-money-dollar-circle-line"></i> 2,000 </p>
+                                <p class="similar-jobs-post-hours"> <span> Full Time </span>  <span> Posted 2 hrs ago </span></p>
+                            </div>
+                        </div>
+
+                        <div class="jb-similar-jobs-item">
+                            <img class="jb-similar-jobs-item-photo" src="assets/images/similar-jobs/similar-jobs-icon.png" alt="Similar Jobs" width="29" height="29">
+                            <div class="similar-job-det-display">
+                                <h3 class="similar-job-title"> Product Designer </h3>
+                                <p class="similar-job-sub-text"> <i class="ri-map-pin-line"></i> Dhaka, Bangladesh </p>
+                                <p class="similar-job-sub-text"> <i class="ri-money-dollar-circle-line"></i> 2,000 </p>
+                                <p class="similar-jobs-post-hours"> <span> Full Time </span>  <span> Posted 2 hrs ago </span></p>
+                            </div>
+                        </div>
+
+                        <div class="jb-similar-jobs-item">
+                            <img class="jb-similar-jobs-item-photo" src="assets/images/similar-jobs/similar-jobs-icon.png" alt="Similar Jobs" width="29" height="29">
+                            <div class="similar-job-det-display">
+                                <h3 class="similar-job-title"> Product Designer </h3>
+                                <p class="similar-job-sub-text"> <i class="ri-map-pin-line"></i> Dhaka, Bangladesh </p>
+                                <p class="similar-job-sub-text"> <i class="ri-money-dollar-circle-line"></i> 2,000 </p>
+                                <p class="similar-jobs-post-hours"> <span> Full Time </span>  <span> Posted 2 hrs ago </span></p>
+                            </div>
+                        </div>
+
+                        <div class="jb-similar-jobs-item">
+                            <img class="jb-similar-jobs-item-photo" src="assets/images/similar-jobs/similar-jobs-icon.png" alt="Similar Jobs" width="29" height="29">
+                            <div class="similar-job-det-display">
+                                <h3 class="similar-job-title"> Product Designer </h3>
+                                <p class="similar-job-sub-text"> <i class="ri-map-pin-line"></i> Dhaka, Bangladesh </p>
+                                <p class="similar-job-sub-text"> <i class="ri-money-dollar-circle-line"></i> 2,000 </p>
+                                <p class="similar-jobs-post-hours"> <span> Full Time </span>  <span> Posted 2 hrs ago </span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-job-title-box view-job-title-box-mb md:hidden">
+                        <p class="jb-view-all-jobs"> View all similar jobs </p>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+
+                    <div class="jb-similar-jobs-notice">
+                        <p class="notice-beware hidden md:flex"> <img src="assets/images/icon/single-job-notice.png" alt="Job Beware Notice" width="12" height="17"> <span> Beware of imposters! </span> </p>
+                        <div class="flex md:hidden notice-job-mb">
+                            <img src="assets/images/icon/single-job-notice.png" alt="Job Beware Notice" width="12" height="17">
+                        </div>
+                        <p class="notice-beware-text"> Job Portal does not promise a job or an interview in exchange of money. Fraudsters may ask you to pay in the...………… <button type="button">See More</button> </p>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+    let JbDesc = document.getElementById("jb-descriptionId");
+    let JbBenefits = document.getElementById("jb-benefitsId");
+
+        if(JbDesc.classList.contains('activeTab')){
+            JbBenefits.classList.remove('activeTab');
+            JbBenefits.classList.add('disableTab');
+        }
+
+    JbBenefits.addEventListener('click',  () =>{
+        
+        if(!JbBenefits.classList.contains('activeTab')){
+            JbDesc.classList.remove('activeTab');
+            JbDesc.classList.add('disableTab');
+            JbBenefits.classList.remove('disableTab');
+            JbBenefits.classList.add('activeTab');
+        }
+    })
+
+    JbDesc.addEventListener('click', () =>{
+        if(!JbDesc.classList.contains('activeTab')){
+            JbBenefits.classList.remove('activeTab');
+            JbDesc.classList.add('activeTab');
+            JbDesc.classList.remove('disableTab');
+            JbBenefits.classList.add('disableTab');
+        }
+    })
+
+
+    // Sticky Navbar
+    let test = document.getElementById("job-type");
+    const mobileNav = document.getElementById('mb-test');
+    const header = document.querySelector(".fixed-navbar");
+    const toggleClass = "is-sticky";
+
+    window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 150) {
+        header.classList.add(toggleClass);
+        mobileNav.classList.add(toggleClass);
+    } else {
+        header.classList.remove(toggleClass);
+        mobileNav.classList.remove(toggleClass);
+    }
+    });
+
+    // Mobile Menu
+    let jbMbMenu2 = document.getElementById('jb-mobile-nav2');
+    let jbMbMenuClose = document.getElementById('tryit');
+    let jbMbMenuDis2 = document.getElementById('jb-mb-menu-show2');
+
+    jbMbMenu2.addEventListener("click", () => {
+        jbMbMenuDis2.classList.add('jb-Mb-Menu-active');
+    });
+
+    document.addEventListener("click", (e) => {
+        if(e.target == jbMbMenuClose){
+            jbMbMenuDis2.classList.remove('jb-Mb-Menu-active');
+        }
+    });
+
+    /* Filter Panel */
+    let filterTrigger = document.getElementById('filter-for-mb-trigger');
+    let filterShowTrigger = document.getElementById('filter-for-mobile');
+    let filterShowTriggerClose = document.getElementById('close-filter-mb-panel');
+    
+
+    filterTrigger.addEventListener('click', () =>{
+        filterShowTrigger.classList.add('jb-filter-for-mb-wrapper')
+    })
+
+    document.addEventListener("click", (e) => {
+        if(e.target == filterShowTriggerClose){
+            filterShowTrigger.classList.remove('jb-filter-for-mb-wrapper');
+        }
+    });
+
+
+
+// Tabs Toggler
+
+    ( function( $ ) {
+        // Variables
+        const $tabLink = $( '#tabs-section .tab-link' );
+        const $tabBody = $( '#tabs-section .tab-body' );
+        let timerOpacity;
+
+        // Toggle Class
+        const init = () => {
+            // Menu Click
+            $tabLink.off( 'click' ).on( 'click', function( e ) {
+                // Prevent Default
+                e.preventDefault();
+                e.stopPropagation();
+
+                // Clear Timers
+                window.clearTimeout( timerOpacity );
+
+                // Toggle Class Logic
+                // Remove Active Classes
+                $tabLink.removeClass( 'active ' );
+                $tabBody.removeClass( 'active ' );
+                $tabBody.removeClass( 'active-content' );
+
+                // Add Active Classes
+                $( this ).addClass( 'active' );
+                $( $( this ).attr( 'href' ) ).addClass( 'active' );
+
+                // Opacity Transition Class
+                timerOpacity = setTimeout( () => {
+                    $( $( this ).attr( 'href' ) ).addClass( 'active-content' );
+                }, 50 );
+            } );
+        };
+
+        // Document Ready
+        $( function() {
+            init();
+        } );
+    }( jQuery ) );
+
+
+    </script>
+
+
+</body>
+</html>

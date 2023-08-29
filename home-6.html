@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> Layout-4 :: Job Portal </title>
+</head>
+<body>
+    
+   <div class="jb-layout-4-wrapper">
+
+        <!-- ======================
+                Header Area
+        ======================= -->
+        <div class="jb-l3-fixed-navbar jb-l6-fixed-navbar hidden lg:flex">
+            <div class="container">
+                <div class="header flex-box">
+                    <div class="jb-logo-menu flex-box w-50">
+                        <div class="jb-logo">
+                            <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                        </div>
+                        <div class="jb-l4-nav jb-l6-nav">
+                            <nav>
+                                <ul>
+                                    <li class="jb-nav-item active"> <a href="#"> Recruiter </a> </li>
+                                    <li class="jb-nav-item"> <a href="#"> Job Seeker </a> </li>
+                                    <li class="jb-nav-item"> <a href="#"> About us </a> </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="jb-l4-hero-user-panel jb-l6-hero-user-panel w-50">
+                        <ul class="jb-l4-justify-end">
+                            <li> <a href="login.html" class="jb-l4-user-login"> Login </a> </li>
+                            <li> <a href="#"> <button class="jb-l6-user-registration" type="button"> Registration </button> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========================
+            Mobile Nav Start
+        ========================== -->
+        <div id="mb-test" class="jb-mobile-navigation flex lg:hidden">
+            
+            <div class="jb-logo">
+                <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+            </div>
+            
+            <i id="jb-mobile-nav" class="ri-menu-line"></i>
+        </div>
+        <div id="jb-mb-menu-show" class="jb-mb-nav-wrapper">
+            <div class="jb-mb-nav-overlay">
+                <div class="jb-mb-menu-panel">
+                    <div class="jb-logo-menu-mobile jb-mb-border-b">
+                        <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                        
+                        <i id="tryit" class="ri-close-line"></i>
+
+                    </div>
+                    <nav class="jb-mobile-menu">
+                        <ul>
+                            <li> <a href="about-us.html"> <i class="ri-lock-line"></i> <span> Login </span>  </a></li>
+                            <li> <a href="user-registration.html"> <i class="ri-user-add-line"></i> <span> Register </span> </a> </li>
+                            <li> <a href="#"> <i class="ri-search-line"></i> <span> Search Jobs </span>  </a></li>
+                            <li> <a href="admin-registration.html"> <i class="ri-briefcase-line"></i> <span> Employer </span>  </a> </li>
+                            <li> <a href="about-us.html"> <i class="ri-information-line"></i> <span> About us </span> </a> </li>
+                        </ul>
+                    </nav>
+                    <div class="jb-user-mb-logout">
+                        <a href="#"> <i class="ri-logout-box-line"></i> <span> Logout</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jb-l6-hero-main">
+                <!-- ======================
+                        Hero Section
+                ======================= -->
+                <div class="jb-l6-hero-content-wrapper">
+                    <!-- ======================
+                            Hero content
+                    ======================= -->
+                    <div class="jb-l6-hero-content-body">
+
+                        <h1 class="jb-l6-hero-title"> Find Your Ideal Job <span> Right Away!! </span> </h1>
+                        <!-- ======================
+                            Layout-6 Hero Search
+                        ======================= -->
+                        <div class="jb-l6-main-hero-search-inner-desktop" >
+                            <form class="jb-l6-main-hero-search">
+                                <ul>
+                                    <li class="l4-mb-search-item">
+                                        <label class="l4-search-label-for-mb" for="Search"> Search </label>
+
+                                        <i class="ri-search-line icon-green"></i>
+                                        <input type="text" placeholder="Enter skill, designation etc..">
+                                    </li>
+                                    <li class="l4-mb-search-item">
+                                        <label class="l4-search-label-for-mb" for="Location"> Location </label>
+
+                                        <i class="ri-map-pin-line icon-green"></i>
+                                        <select>
+                                            <option slected>Location</option>
+                                            <option>Dhaka</option>
+                                            <option>Berlin</option>
+                                            <option>New York</option>
+                                            <option>Sydney</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <div class="l6-main-search-btn">
+                                    <button type="submit" name="search"> Search </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+    
+                    <!-- ======================
+                        Layout-4 Hero Search
+                    ======================= -->
+    
+
+                </div>
+            </div>
+        </div>
+
+    <!-- ===========================
+    Main Layout & L6 Similar Footer
+    =========================== -->
+
+    <footer>
+        <div class="jb-footer-wrapper jb-l6-footer-wrapper">
+            <div class="container px-mb">
+                <div class="jb-footer-content jb-m-l-border">
+                    <div class="jb-footer-logo-box">
+                        <img src="assets/images/layout-6/home/footer-logo.svg" alt="Footer Logo">
+                        <span class="jb-social-icon-box"> 
+                            <i class="ri-facebook-fill"></i> <i class="ri-twitter-fill"></i> <i class="ri-instagram-line"></i> <i class="ri-linkedin-fill"></i>
+                        </span>
+                    </div>
+                    <div class="jb-footer-content-body main-layout">
+                        <ul class="jb-footer-list main-l-footer m-l-fix">
+                            <li id="jb-footer-list-target" class="jb-footer-nav-header main-l-footer-li"> <span> Recruiter </span> <span class="rotateIcon"><i class="ri-arrow-down-s-line"></i></span>  </li>
+                            <li class="jb-footer-item jb-i-none"> Post a Job </li>
+                            <li class="jb-footer-item jb-i-none"> Featured Job </li>
+                            <li class="jb-footer-item jb-i-none"> Browse Candidates </li>
+                            <li class="jb-footer-item jb-i-none"> Recruiter Dashboard </li>
+                        </ul>
+                        <ul class="jb-footer-list main-l-footer m-l-fix">
+                            <li class="jb-footer-nav-header main-l-footer-li"> <span> Job Seeker </span> <span class="rotateIcon"><i class="ri-arrow-down-s-line"></i></span>  </li>
+                            <li class="jb-footer-item jb-i-none"> Browse Categories </li>
+                            <li class="jb-footer-item jb-i-none"> Create Resume </li>
+                            <li class="jb-footer-item jb-i-none"> Saved Jobs </li>
+                            <li class="jb-footer-item jb-i-none"> Job Seeker Dashboard </li>
+                        </ul>
+                        <ul class="jb-footer-list main-l-footer m-l-fix">
+                            <li class="jb-footer-nav-header main-l-footer-li"> <span> About Company </span> <span class="rotateIcon"><i class="ri-arrow-down-s-line"></i></span>  </li>
+                            <li class="jb-footer-item jb-i-none"> Privacy Policy </li>
+                            <li class="jb-footer-item  jb-i-none"> Featured Job </li>
+                            <li class="jb-footer-item jb-i-none"> Browse Candidates </li>
+                            <li class="jb-footer-item jb-i-none"> Recruiter Dashboard </li>
+                        </ul>
+                        <ul class="jb-footer-list main-l-footer m-l-fix">
+                            <li class="jb-footer-nav-header main-l-footer-li"> <span> Contact Us </span> <span class="rotateIcon"><i class="ri-arrow-down-s-line"></i></span>  </li>
+                            <li class="jb-footer-contact jb-i-none"> House #32, Road #12, Sector #9, Uttara, Dhaka. </li>
+                            <li class="jb-footer-contact jb-i-none"> E: jobportal@gmail.com <br> W: www.jobportal.com</li>
+                            <li class="jb-footer-nav-subscribe jb-i-none-2"> Subscribe </li>
+                            <li class="jb-footer-subscribe-box main-l-subs jb-i-none-2"> 
+                                <form>
+                                    <input type="email" name="subscription-email" placeholder="Enter your email">
+                                    <i class="ri-arrow-right-line"></i>
+                                </form>
+                            </li>
+                        </ul>
+                        <div class="mb-footer-subdcribe-m-l">
+                            <div class="mb-footer-subdcribe-inner">
+                                <span class="mb-main-l-footer-label"> Subscribe </span>
+                                <form>
+                                    <input type="email" name="subscription-email" placeholder="Enter your email">
+                                    <i class="ri-arrow-right-line"></i>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jb-footer-copyright px-mb-enable m-l-footer-d-none">
+                    <p> © 2023 <span>Job Portal</span> | Designed by <span>Arc Studio</span> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+    const mobileNav = document.getElementById('mb-test');
+    const header = document.querySelector(".jb-l3-fixed-navbar");
+    const toggleClass = "is-sticky";
+
+    // Get all <ul> elements with class 'jb-footer-list'
+    let ulLists = document.querySelectorAll('.jb-footer-list');
+
+    ulLists.forEach((ul) => {
+    let footerTrigger = ul.querySelector('.jb-footer-nav-header');
+    let footerExpand = ul.querySelectorAll('.fe-1, .fe-2, .fe-3');
+    let arrowIcon = ul.querySelector('.rotateIcon');
+
+    footerTrigger.addEventListener('click', () => {
+        footerExpand.forEach((expandItem) => {
+        expandItem.classList.toggle('l3-l4-expanded-Nav');
+        });
+
+        arrowIcon.classList.toggle('rotate');
+    });
+    });
+
+    window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 150) {
+        header.classList.add(toggleClass);
+        mobileNav.classList.add(toggleClass);
+    } else {
+        header.classList.remove(toggleClass);
+        mobileNav.classList.remove(toggleClass);
+    }
+    });
+
+    let jbMbMenu = document.getElementById('jb-mobile-nav');
+    let jbMbMenu2 = document.getElementById('tryit');
+    let jbMbMenuDis = document.getElementById('jb-mb-menu-show');
+
+    jbMbMenu.addEventListener("click", () => {
+        jbMbMenuDis.classList.add('jb-Mb-Menu-active');
+    });
+
+    document.addEventListener("click", (e) => {
+        if(e.target == jbMbMenu2){
+            jbMbMenuDis.classList.remove('jb-Mb-Menu-active');
+        }
+    });
+    </script>
+
+</body>
+</html>
+

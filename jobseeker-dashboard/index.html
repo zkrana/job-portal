@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Job Seeker || Dashboard</title>
+</head>
+<body>
+    <header>
+            <!-- ======================
+                    Header Area
+            ======================= -->
+
+            <div class="fixed-navbar nav-border hidden lg:flex">
+                <div class="container">
+                    <div class="header flex-box">
+                        <div class="jb-logo-menu flex-box w-50">
+                            <div class="jb-logo">
+                                <img src="../assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                            </div>
+                            <div class="jb-nav">
+                                <nav>
+                                    <ul>
+                                        <li class="jb-nav-item active"> <a href="#"> Recruiter </a> </li>
+                                        <li class="jb-nav-item"> <a href="#"> Job Seeker </a> </li>
+                                        <li class="jb-nav-item"> <a href="#"> About us </a> </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="jb-hero-registered-recruiter w-50">
+                            <ul>
+                                <li>
+                                    <i class="ri-notification-line js-font-fix"></i>
+                                    <div class="jb-recruiter-hero-intro">
+                                        <img src="../assets/images/job-seeker-dashboard/headshot-icon.png" alt="Recruiter Headshot" width="33" height="33">
+                                        <span class="jb-recruiter-hero-title"> Elleuna Diaz </span>
+                                    </div>
+                                    <i class="ri-arrow-down-s-line icon-blue js-font-fix"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =========================
+                Mobile Nav Start
+            ========================== -->
+            <div id="mb-test" class="jb-mobile-navigation flex lg:hidden">
+                
+                <div class="jb-logo">
+                    <img src="../assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                </div>
+                
+                <div class="jb-hero-registered-recruiter">
+                    <ul>
+                        <li>
+                            <i class="ri-notification-line js-font-fix"></i>
+                        </li>
+                        <li>
+                            <div class="jb-recruiter-hero-intro">
+                                <img src="../assets/images/recruiter-dashboard/icon/headshot 1.png" alt="Recruiter Headshot" width="33" height="33">
+                            </div>
+                        </li>
+                        <li>
+                            <i id="jb-mobile-nav" class="ri-menu-line"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="jb-mb-menu-show" class="jb-mb-nav-wrapper">
+                <div class="jb-mb-nav-overlay">
+                    <div class="jb-mb-menu-panel">
+                        <div class="jb-logo-menu-mobile jb-mb-border-b">
+                            <img src="../assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                            
+                            <i id="tryit" class="ri-close-line"></i>
+
+                        </div>
+                        <nav class="jb-mobile-menu">
+                            <ul>
+                                <li> <a href="about-us.html"> <i class="ri-lock-line"></i> <span> Login </span>  </a></li>
+                                <li> <a href="user-registration.html"> <i class="ri-user-add-line"></i> <span> Register </span> </a> </li>
+                                <li> <a href="#"> <i class="ri-search-line"></i> <span> Search Jobs </span>  </a></li>
+                                <li> <a href="admin-registration.html"> <i class="ri-briefcase-line"></i> <span> Employer </span>  </a> </li>
+                                <li> <a href="about-us.html"> <i class="ri-information-line"></i> <span> About us </span> </a> </li>
+                            </ul>
+                        </nav>
+                        <div class="jb-user-mb-logout">
+                            <a href="#"> <i class="ri-logout-box-line"></i> <span> Logout</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </header>
+
+    <!-- =========================
+            Recruiter Dashboard
+    ========================== -->
+    <main>
+        <div class="jb-recruiter-main-dashboard-wrapper bg-mb bg-[unset]">
+            <div class="container">
+
+                <!-- =========================
+                    Recruiter Dashboard hero
+                ========================== -->
+
+                <div class="jb-dashboard-recruiter-title jb-dashboard-recruiter-title-mb">
+                    <h1 class="jb-recruiter-title jb-job-seeker-title-color"> Hi, I am <span> Elleuna </span> </h1>
+                    <p class="jb-recruiter-desc"> Ready to jump back in? </p>
+                </div>
+
+                <!-- =========================
+                    Recruiter Dashboard hero
+                ========================== -->
+                
+                <div class="jb-dashboard-recruiter-content">
+                    <div class="jb-dashboard-main-toggle jb-seeker-dashboard-main-toggle">
+
+                        <nav>
+                            <a class="tab-link active" data-tab="appliedjobs">
+                                <div class="dashboard-tab-switcher-main seeker-dashboard-tab-switcher-main">
+                                    <div class="jb-tab-switcher-icon seeker-tab-switcher-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.227" height="24.227" viewBox="0 0 24.227 24.227"><defs><clipPath id="a"><path d="M0-682.665H24.227v24.227H0Z" transform="translate(0 682.665)" fill="#34a853"/></clipPath></defs><g transform="translate(0 682.665)"><g transform="translate(0 -682.665)"><g clip-path="url(#a)"><g transform="translate(0 5.724)"><path d="M-639.148-2.965h-22.807a.71.71,0,0,1-.71-.71V-19.29a.71.71,0,0,1,.71-.71.71.71,0,0,1,.71.71V-4.385h21.388V-19.29a.71.71,0,0,1,.71-.71.71.71,0,0,1,.71.71V-3.675A.71.71,0,0,1-639.148-2.965Z" transform="translate(662.665 20)" fill="#34a853"/></g><g transform="translate(0 4.304)"><path d="M-283.238-250.062H-287.8a.71.71,0,0,1-.71-.71.71.71,0,0,1,.71-.71h4.529a4.281,4.281,0,0,0,3.138-1.155c1.066-1.061,1.606-2.821,1.606-5.233a.711.711,0,0,0-.71-.71H-299.2a.711.711,0,0,0-.71.71c0,2.388.541,4.139,1.608,5.2a4.29,4.29,0,0,0,3.164,1.184h4.5a.71.71,0,0,1,.71.71.71.71,0,0,1-.71.71h-4.483a5.675,5.675,0,0,1-4.187-1.6c-1.343-1.341-2.024-3.43-2.024-6.209A2.132,2.132,0,0,1-299.2-260h19.968a2.132,2.132,0,0,1,2.129,2.129c0,2.8-.681,4.9-2.025,6.239A5.6,5.6,0,0,1-283.238-250.062Z" transform="translate(301.333 259.999)" fill="#34a853"/></g><path d="M284.881-355.7h-2.839a.71.71,0,0,1-.71-.71v-4.259a.71.71,0,0,1,.71-.71h2.839a.71.71,0,0,1,.71.71v4.259A.71.71,0,0,1,284.881-355.7Zm-2.129-1.42h1.42v-2.839h-1.42Z" transform="translate(-271.349 372.782)" fill="#34a853"/><g transform="translate(7.145 1.465)"><path d="M-10.773-95.741a.71.71,0,0,1-.71-.71v-1.42a.711.711,0,0,0-.71-.71h-5.678a.711.711,0,0,0-.71.71v1.42a.71.71,0,0,1-.71.71.71.71,0,0,1-.71-.71v-1.42A2.132,2.132,0,0,1-17.871-100h5.678a2.132,2.132,0,0,1,2.129,2.129v1.42A.71.71,0,0,1-10.773-95.741Z" transform="translate(20 100)" fill="#34a853"/></g></g></g></g></svg>
+                                    </div>
+                                    <h3> Applied Jobs <span> (12) </span> </h3>
+                                </div>
+                            </a>
+                            <a class="tab-link" data-tab="savedjobs">
+                                <div class="dashboard-tab-switcher-main seeker-dashboard-tab-switcher-main">
+                                    <div class="jb-tab-switcher-icon seeker-tab-switcher-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20.981" height="24.849" viewBox="0 0 20.981 24.849"><path d="M3.334,5.124V19.957a4.129,4.129,0,0,0,4.124,4.124h5.029a.828.828,0,1,0,0-1.657H7.459a2.471,2.471,0,0,1-2.468-2.468V5.124A2.47,2.47,0,0,1,7.459,2.657h10.5a2.47,2.47,0,0,1,2.468,2.468v6.46a.828.828,0,1,0,1.657,0V5.124A4.129,4.129,0,0,0,17.958,1H7.459A4.129,4.129,0,0,0,3.334,5.124Z" transform="translate(-3.334 -1)" fill="#34a853"/><path d="M9.2,7.619h8.745a.828.828,0,1,0,0-1.657H9.2a.828.828,0,0,0,0,1.657Z" transform="translate(-4.2 -1.852)" fill="#34a853"/><path d="M18.774,12.1a.828.828,0,0,0-.828-.828H9.2a.828.828,0,0,0,0,1.657h8.745a.828.828,0,0,0,.828-.828Z" transform="translate(-4.2 -2.765)" fill="#34a853"/><path d="M9.2,16.591a.828.828,0,0,0,0,1.657h3.975a.828.828,0,0,0,0-1.657Z" transform="translate(-4.2 -3.677)" fill="#34a853"/><path d="M21.969,15.462a2.858,2.858,0,1,0,2.858,2.858,2.858,2.858,0,0,0-2.858-2.858Zm0,4.059a1.2,1.2,0,1,1,1.2-1.2,1.2,1.2,0,0,1-1.2,1.2Z" transform="translate(-6.044 -3.483)" fill="#34a853"/><path d="M17.286,29.78a.828.828,0,0,0,.828-.828,3.4,3.4,0,1,1,6.8,0,.828.828,0,1,0,1.657,0,5.056,5.056,0,1,0-10.111,0,.828.828,0,0,0,.828.828Z" transform="translate(-5.588 -4.932)" fill="#34a853"/></svg>
+                                    </div>
+                                    <h3> Saved jobs <span> (13) </span> </h3>
+                                </div>
+                            </a>
+                            <a class="tab-link" data-tab="shortlist">
+                                <div class="dashboard-tab-switcher-main seeker-dashboard-tab-switcher-main">
+                                    <div class="jb-tab-switcher-icon seeker-tab-switcher-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22.833" height="23.954" viewBox="0 0 22.833 23.954"><g transform="translate(0.2 0.2)"><path d="M23.629,4.682H21.946a1.682,1.682,0,0,0-3.365,0h-6.73a1.682,1.682,0,0,0-3.365,0H6.8A2.807,2.807,0,0,0,4,7.487V23.75a2.807,2.807,0,0,0,2.8,2.8H23.629a2.807,2.807,0,0,0,2.8-2.8V7.487A2.807,2.807,0,0,0,23.629,4.682Zm-3.926,0a.561.561,0,0,1,1.122,0V5.8a.561.561,0,1,1-1.122,0Zm-10.095,0a.561.561,0,0,1,1.122,0V5.8a.561.561,0,1,1-1.122,0Zm-4.487,2.8A1.685,1.685,0,0,1,6.8,5.8H8.487a1.682,1.682,0,1,0,3.365,0h6.73a1.682,1.682,0,1,0,3.365,0h1.682a1.685,1.685,0,0,1,1.682,1.682V9.73H5.122ZM25.311,23.75a1.685,1.685,0,0,1-1.682,1.682H6.8A1.685,1.685,0,0,1,5.122,23.75v-12.9H25.311Z" transform="translate(-4 -3)" fill="#34a853" stroke="#34a853" stroke-width="0.4"/><path d="M11.122,24.926H12.8A1.123,1.123,0,0,0,13.926,23.8V22.122A1.123,1.123,0,0,0,12.8,21H11.122A1.123,1.123,0,0,0,10,22.122V23.8A1.123,1.123,0,0,0,11.122,24.926Zm0-2.8H12.8V23.8H11.122Z" transform="translate(-6.635 -10.905)" fill="#34a853" stroke="#34a853" stroke-width="0.4"/><path d="M21.622,24.926H23.3A1.123,1.123,0,0,0,24.426,23.8V22.122A1.123,1.123,0,0,0,23.3,21H21.622A1.123,1.123,0,0,0,20.5,22.122V23.8A1.123,1.123,0,0,0,21.622,24.926Zm0-2.8H23.3V23.8H21.622Z" transform="translate(-11.247 -10.905)" fill="#34a853" stroke="#34a853" stroke-width="0.4"/><path d="M32.122,24.926H33.8A1.123,1.123,0,0,0,34.926,23.8V22.122A1.123,1.123,0,0,0,33.8,21H32.122A1.123,1.123,0,0,0,31,22.122V23.8A1.123,1.123,0,0,0,32.122,24.926Zm0-2.8H33.8V23.8H32.122Z" transform="translate(-15.858 -10.905)" fill="#34a853" stroke="#34a853" stroke-width="0.4"/><path d="M11.122,35.926H12.8A1.123,1.123,0,0,0,13.926,34.8V33.122A1.123,1.123,0,0,0,12.8,32H11.122A1.123,1.123,0,0,0,10,33.122V34.8A1.123,1.123,0,0,0,11.122,35.926Zm0-2.8H12.8V34.8H11.122Z" transform="translate(-6.635 -15.736)" fill="#34a853" stroke="#34a853" stroke-width="0.4"/><path d="M21.622,35.926H23.3A1.123,1.123,0,0,0,24.426,34.8V33.122A1.123,1.123,0,0,0,23.3,32H21.622A1.123,1.123,0,0,0,20.5,33.122V34.8A1.123,1.123,0,0,0,21.622,35.926Zm0-2.8H23.3V34.8H21.622Z" transform="translate(-11.247 -15.736)" fill="#34a853" stroke="#34a853" stroke-width="0.4"/><path d="M32.122,35.926H33.8A1.123,1.123,0,0,0,34.926,34.8V33.122A1.123,1.123,0,0,0,33.8,32H32.122A1.123,1.123,0,0,0,31,33.122V34.8A1.123,1.123,0,0,0,32.122,35.926Zm0-2.8H33.8V34.8H32.122Z" transform="translate(-15.858 -15.736)" fill="#34a853" stroke="#34a853" stroke-width="0.4"/></g></svg>
+                                    </div>
+                                    <h3> Shortlist </h3>
+                                </div>
+                            </a>
+                          </nav>
+
+                          <!--Container-->
+                          <div class="tab_content mt-top-fix">
+                            <!-- ==============
+                                Applied Jobs
+                            ================ -->
+                            <div id="tab-appliedjobs" class="tab-content active">
+
+                                <div class="jb-job-seeker-applied-job-filter">
+                                    <div class="applicants-filter-sort-by">
+                                        <select class="Jb-job-search-input" name="sort-by">
+                                            <option selected=""> Sort By </option>
+                                            <option value="Salary"> Salary </option>
+                                            <option value="Experiance"> Experiance </option>
+                                            <option value="Location"> Location </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <table class="dashboard-data-table seeker-job-dashboard-data-table pb-error-fix">
+                                    <tr class="jb-dashboard-details-header jobseeker-dashboard-details-header">
+                                        <th> <span> Applied Jobs </span> </th>
+                                        <th> <span> Company </span> </th>
+                                        <th> <span> Apply Date </span> </th>
+                                        <th> <span> Status </span> </th>
+                                        <th> <span> Action </span> </th>
+                                    </tr>
+                                    <tr class="jb-dashboard-details-content-body jobseeker-dashboard-details-data">
+                                        <td>
+                                            <div class="jb-dashboard-recruiter-job-data jb-dashboard-jobseeker-job-data">
+                                                <img src="../assets/images/job-seeker-dashboard/icon/job-provider.png" alt="Provider">
+                                                <div class="job-seeker-job-data-wrap">
+                                                    <div class="jb-seeker-header-box">
+                                                        <div class="seeker-header-for-mb">
+                                                            <span class="seeker-com-t">Acer Bangladesh</span>
+                                                        </div>
+                                                        <h4 class="jb-dashboard-title"> Senior Software Engineer </h4>
+                                                    </div>
+                                                    <div class="flex-box">
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-map-pin-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> Dhaka </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-money-dollar-circle-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3,000-4,000 </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-time-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3 days ago </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> Acer Bangladesh </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> 22-05-2023 </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <button class="job-seeker-data-action-btn"> Viewed </button>
+                                        </td>
+                                        <td>
+                                            <div class="dashboard-job-action seeker-dashboard-job-action seeker-app-mb-action">
+                                                <button class="job-seeker-aap-mb job-seeker-data-action-btn"> Viewed </button>
+                                                <ul>
+                                                    <li>
+                                                        <i class="ri-eye-line"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="ri-delete-bin-line"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="jb-dashboard-details-content-body jobseeker-dashboard-details-data">
+                                        <td>
+                                            <div class="jb-dashboard-recruiter-job-data jb-dashboard-jobseeker-job-data">
+                                                <img src="../assets/images/job-seeker-dashboard/icon/job-provider.png" alt="Provider">
+                                                <div class="job-seeker-job-data-wrap">
+                                                    <div class="jb-seeker-header-box">
+                                                        <div class="seeker-header-for-mb">
+                                                            <span class="seeker-com-t">Acer Bangladesh</span>
+                                                        </div>
+                                                        <h4 class="jb-dashboard-title"> Senior Software Engineer </h4>
+                                                    </div>
+                                                    <div class="flex-box">
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-map-pin-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> Dhaka </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-money-dollar-circle-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3,000-4,000 </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-time-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3 days ago </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> Acer Bangladesh </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> 22-05-2023 </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <button class="job-seeker-data-action-btn"> Viewed </button>
+                                        </td>
+                                        <td>
+                                            <div class="dashboard-job-action seeker-dashboard-job-action seeker-app-mb-action">
+                                                <button class="job-seeker-aap-mb job-seeker-data-action-btn"> Viewed </button>
+                                                <ul>
+                                                    <li>
+                                                        <i class="ri-eye-line"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="ri-delete-bin-line"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="jb-dashboard-details-content-body jobseeker-dashboard-details-data">
+                                        <td>
+                                            <div class="jb-dashboard-recruiter-job-data jb-dashboard-jobseeker-job-data">
+                                                <img src="../assets/images/job-seeker-dashboard/icon/job-provider.png" alt="Provider">
+                                                <div class="job-seeker-job-data-wrap">
+                                                    <div class="jb-seeker-header-box">
+                                                        <div class="seeker-header-for-mb">
+                                                            <span class="seeker-com-t">Acer Bangladesh</span>
+                                                        </div>
+                                                        <h4 class="jb-dashboard-title"> Senior Software Engineer </h4>
+                                                    </div>
+                                                    <div class="flex-box">
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-map-pin-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> Dhaka </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-money-dollar-circle-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3,000-4,000 </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-time-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3 days ago </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> Acer Bangladesh </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> 22-05-2023 </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <button class="job-seeker-data-action-btn"> Viewed </button>
+                                        </td>
+                                        <td>
+                                            <div class="dashboard-job-action seeker-dashboard-job-action seeker-app-mb-action">
+                                                <button class="job-seeker-aap-mb job-seeker-data-action-btn"> Viewed </button>
+                                                <ul>
+                                                    <li>
+                                                        <i class="ri-eye-line"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="ri-delete-bin-line"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="jb-dashboard-details-content-body jobseeker-dashboard-details-data">
+                                        <td>
+                                            <div class="jb-dashboard-recruiter-job-data jb-dashboard-jobseeker-job-data">
+                                                <img src="../assets/images/job-seeker-dashboard/icon/job-provider.png" alt="Provider">
+                                                <div class="job-seeker-job-data-wrap">
+                                                    <div class="jb-seeker-header-box">
+                                                        <div class="seeker-header-for-mb">
+                                                            <span class="seeker-com-t">Acer Bangladesh</span>
+                                                        </div>
+                                                        <h4 class="jb-dashboard-title"> Senior Software Engineer </h4>
+                                                    </div>
+                                                    <div class="flex-box">
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-map-pin-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> Dhaka </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-money-dollar-circle-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3,000-4,000 </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-time-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3 days ago </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> Acer Bangladesh </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> 22-05-2023 </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <button class="job-seeker-data-action-btn"> Viewed </button>
+                                        </td>
+                                        <td>
+                                            <div class="dashboard-job-action seeker-dashboard-job-action seeker-app-mb-action">
+                                                <button class="job-seeker-aap-mb job-seeker-data-action-btn"> Viewed </button>
+                                                <ul>
+                                                    <li>
+                                                        <i class="ri-eye-line"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="ri-delete-bin-line"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="jb-dashboard-details-content-body jobseeker-dashboard-details-data">
+                                        <td>
+                                            <div class="jb-dashboard-recruiter-job-data jb-dashboard-jobseeker-job-data">
+                                                <img src="../assets/images/job-seeker-dashboard/icon/job-provider.png" alt="Provider">
+                                                <div class="job-seeker-job-data-wrap">
+                                                    <div class="jb-seeker-header-box">
+                                                        <div class="seeker-header-for-mb">
+                                                            <span class="seeker-com-t">Acer Bangladesh</span>
+                                                        </div>
+                                                        <h4 class="jb-dashboard-title"> Senior Software Engineer </h4>
+                                                    </div>
+                                                    <div class="flex-box">
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-map-pin-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> Dhaka </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-money-dollar-circle-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3,000-4,000 </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-time-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3 days ago </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> Acer Bangladesh </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> 22-05-2023 </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <button class="job-seeker-data-action-btn"> Viewed </button>
+                                        </td>
+                                        <td>
+                                            <div class="dashboard-job-action seeker-dashboard-job-action seeker-app-mb-action">
+                                                <button class="job-seeker-aap-mb job-seeker-data-action-btn"> Viewed </button>
+                                                <ul>
+                                                    <li>
+                                                        <i class="ri-eye-line"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="ri-delete-bin-line"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+                            </div>
+
+
+                            
+                            <!--===================
+                                Tab Saved Jobs
+                            ====================-->
+
+                            <div id="tab-savedjobs" class="tab-content">
+                                <div class="jb-job-seeker-applied-job-filter">
+                                    <div class="applicants-filter-sort-by">
+                                        <select class="Jb-job-search-input" name="sort-by">
+                                            <option selected=""> Sort By </option>
+                                            <option value="Salary"> Salary </option>
+                                            <option value="Experiance"> Experiance </option>
+                                            <option value="Location"> Location </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <table class="dashboard-data-table seeker-job-dashboard-data-table seeker-saved-tab-data pb-error-fix">
+                                    <tr class="jb-dashboard-details-header jobseeker-dashboard-details-header">
+                                        <th> <span> Saved Jobs </span> </th>
+                                        <th> <span> Company </span> </th>
+                                        <th> <span> Deadline </span> </th>
+                                        <th> <span> Action </span> </th>
+                                    </tr>
+                                     <tr class="jb-dashboard-details-content-body jobseeker-dashboard-details-data jobseeker-saved-data">
+                                        <td>
+                                            <div class="jb-dashboard-recruiter-job-data jb-dashboard-jobseeker-job-data">
+                                                <img src="../assets/images/job-seeker-dashboard/icon/job-provider.png" alt="Provider">
+                                                <div class="job-seeker-job-data-wrap">
+                                                    <div class="jb-seeker-header-box">
+                                                        <div class="seeker-header-for-mb">
+                                                            <span class="seeker-com-t">Acer Bangladesh</span>
+                                                        </div>
+                                                        <h4 class="jb-dashboard-title"> Senior Software Engineer </h4>
+                                                    </div>
+                                                    <div class="flex-box">
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-map-pin-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> Dhaka </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-money-dollar-circle-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3,000-4,000 </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-time-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3 days ago </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> Acer Bangladesh </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> 22-05-2023 </span>
+                                        </td>
+                                        <td>
+                                            <div class="dashboard-job-action seeker-dashboard-job-action saved-jobs-apply-btn-group js-action">
+                                                <ul>
+                                                    <li>
+                                                        <button type="button" name="apply"> Apply </button>
+                                                    </li>
+                                                    <li>
+                                                        <a> <i class="ri-eye-line"></i> </a>
+
+                                                        <a> <i class="ri-delete-bin-line"></i> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="jb-dashboard-details-content-body jobseeker-dashboard-details-data jobseeker-saved-data">
+                                        <td>
+                                            <div class="jb-dashboard-recruiter-job-data jb-dashboard-jobseeker-job-data">
+                                                <img src="../assets/images/job-seeker-dashboard/icon/job-provider.png" alt="Provider">
+                                                <div class="job-seeker-job-data-wrap">
+                                                    <div class="jb-seeker-header-box">
+                                                        <div class="seeker-header-for-mb">
+                                                            <span class="seeker-com-t">Acer Bangladesh</span>
+                                                        </div>
+                                                        <h4 class="jb-dashboard-title"> Senior Software Engineer </h4>
+                                                    </div>
+                                                    <div class="flex-box">
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-map-pin-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> Dhaka </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-money-dollar-circle-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3,000-4,000 </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-time-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3 days ago </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> Acer Bangladesh </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> 22-05-2023 </span>
+                                        </td>
+                                        <td>
+                                            <div class="dashboard-job-action seeker-dashboard-job-action saved-jobs-apply-btn-group js-action">
+                                                <ul>
+                                                    <li>
+                                                        <button type="button" name="apply"> Apply </button>
+                                                    </li>
+                                                    <li>
+                                                        <a> <i class="ri-eye-line"></i> </a>
+
+                                                        <a> <i class="ri-delete-bin-line"></i> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="jb-dashboard-details-content-body jobseeker-dashboard-details-data jobseeker-saved-data">
+                                        <td>
+                                            <div class="jb-dashboard-recruiter-job-data jb-dashboard-jobseeker-job-data">
+                                                <img src="../assets/images/job-seeker-dashboard/icon/job-provider.png" alt="Provider">
+                                                <div class="job-seeker-job-data-wrap">
+                                                    <div class="jb-seeker-header-box">
+                                                        <div class="seeker-header-for-mb">
+                                                            <span class="seeker-com-t">Acer Bangladesh</span>
+                                                        </div>
+                                                        <h4 class="jb-dashboard-title"> Senior Software Engineer </h4>
+                                                    </div>
+                                                    <div class="flex-box">
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-map-pin-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> Dhaka </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-money-dollar-circle-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3,000-4,000 </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-time-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3 days ago </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> Acer Bangladesh </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> 22-05-2023 </span>
+                                        </td>
+                                        <td>
+                                            <div class="dashboard-job-action seeker-dashboard-job-action saved-jobs-apply-btn-group js-action">
+                                                <ul>
+                                                    <li>
+                                                        <button type="button" name="apply"> Apply </button>
+                                                    </li>
+                                                    <li>
+                                                        <a> <i class="ri-eye-line"></i> </a>
+
+                                                        <a> <i class="ri-delete-bin-line"></i> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="jb-dashboard-details-content-body jobseeker-dashboard-details-data jobseeker-saved-data">
+                                        <td>
+                                            <div class="jb-dashboard-recruiter-job-data jb-dashboard-jobseeker-job-data">
+                                                <img src="../assets/images/job-seeker-dashboard/icon/job-provider.png" alt="Provider">
+                                                <div class="job-seeker-job-data-wrap">
+                                                    <div class="jb-seeker-header-box">
+                                                        <div class="seeker-header-for-mb">
+                                                            <span class="seeker-com-t">Acer Bangladesh</span>
+                                                        </div>
+                                                        <h4 class="jb-dashboard-title"> Senior Software Engineer </h4>
+                                                    </div>
+                                                    <div class="flex-box">
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-map-pin-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> Dhaka </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-money-dollar-circle-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3,000-4,000 </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-time-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3 days ago </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> Acer Bangladesh </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> 22-05-2023 </span>
+                                        </td>
+                                        <td>
+                                            <div class="dashboard-job-action seeker-dashboard-job-action saved-jobs-apply-btn-group js-action">
+                                                <ul>
+                                                    <li>
+                                                        <button type="button" name="apply"> Apply </button>
+                                                    </li>
+                                                    <li>
+                                                        <a> <i class="ri-eye-line"></i> </a>
+
+                                                        <a> <i class="ri-delete-bin-line"></i> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="jb-dashboard-details-content-body jobseeker-dashboard-details-data jobseeker-saved-data">
+                                        <td>
+                                            <div class="jb-dashboard-recruiter-job-data jb-dashboard-jobseeker-job-data">
+                                                <img src="../assets/images/job-seeker-dashboard/icon/job-provider.png" alt="Provider">
+                                                <div class="job-seeker-job-data-wrap">
+                                                    <div class="jb-seeker-header-box">
+                                                        <div class="seeker-header-for-mb">
+                                                            <span class="seeker-com-t">Acer Bangladesh</span>
+                                                        </div>
+                                                        <h4 class="jb-dashboard-title"> Senior Software Engineer </h4>
+                                                    </div>
+                                                    <div class="flex-box">
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-map-pin-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> Dhaka </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-money-dollar-circle-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3,000-4,000 </p>
+                                                        </div>
+                                                        <div class="seeker-small-box">
+                                                            <i class="ri-time-line icon-green"></i>
+                                                            <p class="jb-dashboard-job-type jb-seeker-font-size"> 3 days ago </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> Acer Bangladesh </span>
+                                        </td>
+                                        <td class="jbseeker-col-mb">
+                                            <span> 22-05-2023 </span>
+                                        </td>
+                                        <td>
+                                            <div class="dashboard-job-action seeker-dashboard-job-action saved-jobs-apply-btn-group js-action">
+                                                <ul>
+                                                    <li>
+                                                        <button type="button" name="apply"> Apply </button>
+                                                    </li>
+                                                    <li>
+                                                        <a> <i class="ri-eye-line"></i> </a>
+
+                                                        <a> <i class="ri-delete-bin-line"></i> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        
+                            <!--Tab Calender-->
+                            <div id="tab-shortlist" class="tab-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <script>
+    const mobileNav = document.getElementById('mb-test');
+    const header = document.querySelector(".fixed-navbar");
+    const toggleClass = "is-sticky";
+
+    window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 100) {
+        header.classList.add(toggleClass);
+        mobileNav.classList.add(toggleClass);
+    } else {
+        header.classList.remove(toggleClass);
+        mobileNav.classList.remove(toggleClass);
+    }
+    });
+
+    
+    let jbMbMenu = document.getElementById('jb-mobile-nav');
+        let jbMbMenu2 = document.getElementById('tryit');
+        let jbMbMenuDis = document.getElementById('jb-mb-menu-show');
+
+        jbMbMenu.addEventListener("click", () => {
+            jbMbMenuDis.classList.add('jb-Mb-Menu-active');
+        });
+
+        document.addEventListener("click", (e) => {
+            if(e.target == jbMbMenu2){
+                jbMbMenuDis.classList.remove('jb-Mb-Menu-active');
+            }
+        });
+        
+
+    $("nav a").click(function () {
+    var tabID = $(this).attr("data-tab");
+    $(this).addClass("active").siblings().removeClass("active");
+    $("#tab-" + tabID)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+    });
+    </script>
+</body>
+</html>

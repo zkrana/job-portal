@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Job Seeker || Dashboard</title>
+</head>
+<body>
+    <header>
+            <!-- ======================
+                    Header Area
+            ======================= -->
+
+            <div class="fixed-navbar nav-border hidden lg:flex">
+                <div class="container">
+                    <div class="header flex-box">
+                        <div class="jb-logo-menu flex-box w-50">
+                            <div class="jb-logo">
+                                <img src="../assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                            </div>
+                            <div class="jb-nav">
+                                <nav>
+                                    <ul>
+                                        <li class="jb-nav-item active"> <a href="#"> Recruiter </a> </li>
+                                        <li class="jb-nav-item"> <a href="#"> Job Seeker </a> </li>
+                                        <li class="jb-nav-item"> <a href="#"> About us </a> </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="jb-hero-registered-recruiter w-50">
+                            <ul>
+                                <li>
+                                    <i class="ri-notification-line icon-blue js-font-fix"></i>
+                                </li>
+                                <li>
+                                    <div class="jb-recruiter-hero-intro">
+                                        <img src="../assets/images/job-seeker-dashboard/headshot-icon.png" alt="Recruiter Headshot" width="33" height="33">
+                                        <span class="jb-recruiter-hero-title"> Elleuna Diaz </span>
+                                    </div>
+                                    <i class="ri-arrow-down-s-line icon-blue js-font-fix"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =========================
+                Mobile Nav Start
+            ========================== -->
+            <div id="mb-test" class="jb-mobile-navigation flex lg:hidden">
+                
+                <div class="jb-logo">
+                    <img src="../assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                </div>
+                
+                <div class="jb-hero-registered-recruiter">
+                    <ul>
+                        <li>
+                            <i class="ri-notification-line icon-blue js-font-fix"></i>
+                        </li>
+                        <li>
+                            <div class="jb-recruiter-hero-intro">
+                                <img src="../assets/images/recruiter-dashboard/icon/headshot 1.png" alt="Recruiter Headshot" width="33" height="33">
+                            </div>
+                        </li>
+                        <li>
+                            <i id="jb-mobile-nav" class="ri-menu-line"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="jb-mb-menu-show" class="jb-mb-nav-wrapper">
+                <div class="jb-mb-nav-overlay">
+                    <div class="jb-mb-menu-panel">
+                        <div class="jb-logo-menu-mobile jb-mb-border-b">
+                            <img src="../assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                            
+                            <i id="tryit" class="ri-close-line"></i>
+
+                        </div>
+                        <nav class="jb-mobile-menu">
+                            <ul>
+                                <li> <a href="about-us.html"> <i class="ri-lock-line"></i> <span> Login </span>  </a></li>
+                                <li> <a href="user-registration.html"> <i class="ri-user-add-line"></i> <span> Register </span> </a> </li>
+                                <li> <a href="#"> <i class="ri-search-line"></i> <span> Search Jobs </span>  </a></li>
+                                <li> <a href="admin-registration.html"> <i class="ri-briefcase-line"></i> <span> Employer </span>  </a> </li>
+                                <li> <a href="about-us.html"> <i class="ri-information-line"></i> <span> About us </span> </a> </li>
+                            </ul>
+                        </nav>
+                        <div class="jb-user-mb-logout">
+                            <a href="#"> <i class="ri-logout-box-line"></i> <span> Logout</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <main>
+        <div class="job-seeker-profile-wrapper">
+            <div class="container">
+
+                <!-- =========================
+                Job Seeker Personal Info hero
+                ========================== -->
+
+                <div class="jb-dashboard-seeker-profile-hero">
+                    <h1 class="jb-seeker-profile-title"> My Profile </h1>
+                </div>
+
+                <!-- =========================
+                    Job Seeker Personal Info
+                ========================== -->
+
+                <div class="job-profile-personal-info-wrapper">
+                    <div class="edit-pro">
+                        <a href="#" class="edit-profile">
+                            <button type="button" name="edit-profile"> <i class="ri-pencil-line"></i> <span> Edit Profile </span> </button>
+                        </a>
+                    </div>
+                    <div class="jb-seeker-resume-personal-info flex-item-center">
+                        <div class="jb-resume-photo">
+                            <img src="../assets/images/job-seeker-dashboard/headshot-large.png" width="235" height="235" alt="Job Seeker Profile Photo">
+                            <div class="seeker-profile-mb-show">
+                                <span class="resume-seeker-name"> Elleuna Diaz </span>
+                                <span class="resume-seeker-position"> UI/UX Designer </span>
+                            </div>
+                            <div class="seeker-profile-mb">
+                                <button onclick="document.getElementById('file').click(); return false;">Update Photo</button>
+                                <input class="hidden" type="file" id="file" name="company-profile-photo">
+                            </div>
+                        </div>
+                        <div class="jb-resume-personal-info-wrapper flex-justify-between">
+                            <div class="personal-info-details-left">
+                                <ul>
+                                    <li class="seeker-profile-mb">
+                                        <span class="resume-seeker-name"> Elleuna Diaz </span> 
+                                    </li>
+                                    <li class="seeker-profile-mb">
+                                        <div class="flex-item-center">
+                                            <span> UI/UX Designer </span>
+                                            <div class="flex-item-center flex-item-center-gap-r"> <i class="ri-map-pin-line"></i> <span> Dhaka, Bangladesh </span> </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex-item-center fl-2">
+                                            <div class="seeker-profile-mb-s"> <i class="ri-map-pin-line icon-blue"></i> <span> Dhaka, Bangladesh </span> </div>
+                                            <div class="flex-item-center flex-item-center-gap-r"> <i class="ri-calendar-2-line icon-blue js-font-fix"></i> <span> 01-03-1993 </span> </div>
+                                        </div>
+                                    </li>
+                                    <li class="flex-item-center  fl-2">
+                                        <div class="flex-item-center">
+                                            <div class="flex-item-center flex-item-center-gap-r"> <i class="ri-mail-line icon-blue js-font-fix"></i> <span> elleuna93@gmail.com </span> </div>
+                                        </div>
+                                        <div class="flex-item-center">
+                                            <div class="flex-item-center flex-item-center-gap-r"> <i class="ri-phone-line icon-blue js-font-fix"></i> <span> +880167097XXXX </span> </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex-item-center">
+                                            <div class="flex-item-center flex-item-center-gap-r"> <i class="ri-briefcase-line icon-blue js-font-fix"></i> <span> 4 Years experience </span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="personal-info-details-right">
+                                <div class="jb-seeker-total-hit flex-justify-between">
+                                    <span> 12 Jobs Applied </span> <span> 5 Jobs Saved </span>
+                                </div>
+                                <a class="resume-download" href="#" download> <i class="ri-download-2-line"></i> <span> Download your CV </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- =========================
+                 Job Seeker Personal Detaills
+                ========================== -->
+                
+                <div class="jb-seeker-resume-content-details">
+
+                    <div class="resume-item">
+                        <div class="resume-item-title flex-justify-between">
+                            <span> Skills </span> 
+                            <a class="resume-add-more"> <i class="ri-add-line"></i> Add more </a>
+                            <a class="resume-add-more-mb"> <i class="ri-add-line icon-blue"></i> </a>
+                            
+                        </div>
+                        <ul class="resume-item-details resume-item-details-p">
+                            <li>
+                                <p> Lorem, Ipsum, Duo, Ement, Fastler. Bilingo, Septra. </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-title flex-justify-between">
+                            <span> Experience </span> 
+                            <a class="resume-add-more"> <i class="ri-add-line"></i> Add more </a>
+                            <a class="resume-add-more-mb"> <i class="ri-add-line icon-blue"></i> </a>
+                        </div>
+                        <ul class="resume-item-details">
+                            <li>
+                                <div class="exp-details flex-justify-between">
+                                    <div>
+                                        <h4> Graphic Designer </h4>
+                                        <h5> ABC Group </h5>
+                                        <p> <span> 2 </span> Years <span> 5 </span> Months </p>
+                                    </div>
+                                   <p>  <span> Jan 2021 </span> - <span> Present </span> </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="exp-details item-p-21 flex-justify-between">
+                                    <div>
+                                        <h4> Graphic Designer </h4>
+                                        <h5> ABC Group </h5>
+                                        <p> <span> 2 </span> Years <span> 5 </span> Months </p>
+                                    </div>
+                                   <p>  <span> Jan 2021 </span> - <span> Present </span> </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-title flex-justify-between">
+                            <span> Education </span> 
+                            <a class="resume-add-more"> <i class="ri-add-line"></i> Add more </a>
+                            <a class="resume-add-more-mb"> <i class="ri-add-line icon-blue"></i> </a>
+                        </div>
+                        <ul class="resume-item-details">
+                            <li>
+                                <div class="exp-details flex-justify-between">
+                                    <div>
+                                        <h4> B. SC. in Computer Science and Engineering </h4>
+                                        <h5> Independent University </h5>
+                                        <p> CGPA:<span> 3.65  </span> </p>
+                                    </div>
+                                   <p>  <span> 2012 </span> - <span> 2016 </span> </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="exp-details item-p-21 flex-justify-between">
+                                    <div>
+                                        <h4> B. SC. in Computer Science and Engineering </h4>
+                                        <h5> Independent University </h5>
+                                        <p> CGPA:<span> 3.65  </span> </p>
+                                    </div>
+                                   <p>  <span> 2018 </span> - <span> 2020 </span> </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-title flex-justify-between">
+                            <span> Projects </span> 
+                            <a class="resume-add-more"> <i class="ri-add-line"></i> Add more </a>
+                            <a class="resume-add-more-mb"> <i class="ri-add-line icon-blue"></i> </a>
+                        </div>
+                        <ul class="resume-item-details">
+                            <li>
+                                <div class="exp-details flex-justify-between">
+                                    <div>
+                                        <h4> User Dashboard Design </h4>
+                                        <h5> Online E-commerce </h5>
+                                    </div>
+                                   <p>  <span> 2018 </span> - <span> 2020 </span> </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-title flex-justify-between">
+                            <span> IT Skill / Software Skill </span> 
+                            <a class="resume-add-more"> <i class="ri-add-line"></i> Add more </a>
+                            <a class="resume-add-more-mb"> <i class="ri-add-line icon-blue"></i> </a>
+                        </div>
+                        <ul class="resume-item-details expertise-tags">
+                            <li>
+                                <span> Adobe Photoshop </span> <span> Adobe Illustrator </span>  <span> Adobe XD </span> <span> Figma </span>  <span> Marvel </span> <span> Invision </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script>
+    //Sticky Navbar
+    const mobileNav = document.getElementById('mb-test');
+    const header = document.querySelector(".fixed-navbar");
+    const toggleClass = "is-sticky";
+
+    window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 100) {
+        header.classList.add(toggleClass);
+        mobileNav.classList.add(toggleClass);
+    } else {
+        header.classList.remove(toggleClass);
+        mobileNav.classList.remove(toggleClass);
+    }
+    });
+    // Mobile Menu
+    let jbMbMenu = document.getElementById('jb-mobile-nav');
+    let jbMbMenu2 = document.getElementById('tryit');
+    let jbMbMenuDis = document.getElementById('jb-mb-menu-show');
+
+    jbMbMenu.addEventListener("click", () => {
+        jbMbMenuDis.classList.add('jb-Mb-Menu-active');
+    });
+
+    document.addEventListener("click", (e) => {
+        if(e.target == jbMbMenu2){
+            jbMbMenuDis.classList.remove('jb-Mb-Menu-active');
+        }
+    });
+    </script>
+
+</body>
+</html>

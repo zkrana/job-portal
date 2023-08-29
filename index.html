@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> Job Portal </title>
+</head>
+<body>
+    
+   <div class="jb-hero-section-wrapper">
+        <div class="jb-bg-image-box">
+            <div class="jb-hero-bg-pos"></div>
+            <!-- <img class="jb-hero-bg-pos" src="assets/images/bg-image/jb-hero-bg.svg" alt="JB-BG-Image"> -->
+        </div>
+        <div class="jb-hero-content-wrapper">
+
+            <!-- ======================
+                    Header Area
+            ======================= -->
+
+            <div class="fixed-navbar hidden lg:flex">
+                <div class="container">
+                    <div class="header flex-box">
+                        <div class="jb-logo-menu flex-box w-50">
+                            <div class="jb-logo">
+                                <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                            </div>
+                            <div class="jb-nav">
+                                <nav>
+                                    <ul>
+                                        <li class="jb-nav-item active"> <a href="#"> Recruiter </a> </li>
+                                        <li class="jb-nav-item"> <a href="#"> Job Seeker </a> </li>
+                                        <li class="jb-nav-item"> <a href="#"> About us </a> </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="jb-hero-user-panel w-50">
+                            <ul class="nav-flex">
+                                <li> <a href="login.html" class="jb-user-login"> Login </a> </li>
+                                <li> <a href="#"> <button class="jb-user-registration" type="button"> Registration </button> </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =========================
+                Mobile Nav Start
+            ========================== -->
+            <div id="mb-test" class="jb-mobile-navigation bg-unset-home flex lg:hidden">
+                
+                <div class="jb-logo">
+                    <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                </div>
+                
+                <i id="jb-mobile-nav" class="ri-menu-line"></i>
+            </div>
+
+            <div id="jb-mb-menu-show" class="jb-mb-nav-wrapper">
+                <div class="jb-mb-nav-overlay">
+                    <div class="jb-mb-menu-panel">
+                        <div class="jb-logo-menu-mobile jb-mb-border-b">
+                            <img src="assets/images/logo/jb-logo.svg" width="80" height="33" alt="Job Portal Logo">
+                            
+                            <i id="tryit" class="ri-close-line"></i>
+
+                        </div>
+                        <nav class="jb-mobile-menu">
+                            <ul>
+                                <li> <a href="about-us.html"> <i class="ri-lock-line"></i> <span> Login </span>  </a></li>
+                                <li> <a href="user-registration.html"> <i class="ri-user-add-line"></i> <span> Register </span> </a> </li>
+                                <li> <a href="#"> <i class="ri-search-line"></i> <span> Search Jobs </span>  </a></li>
+                                <li> <a href="admin-registration.html"> <i class="ri-briefcase-line"></i> <span> Employer </span>  </a> </li>
+                                <li> <a href="about-us.html"> <i class="ri-information-line"></i> <span> About us </span> </a> </li>
+                            </ul>
+                        </nav>
+                        <div class="jb-user-mb-logout">
+                            <a href="#"> <i class="ri-logout-box-line"></i> <span> Logout</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- =========================
+                Hero Main Content Area
+            ========================== -->
+
+             <div class="container">
+                <div class="jb-hero-content-body g-flex-box">
+                    <div class="jb-hero-job-search-panel  w-[472px] lg:w-50">
+                        <div class="jb-hero-job-search">
+                            <h1 class="jb-job-search-heading"> Find Your <span class="job-search-mark"> Dream </span>Job </h1>
+                            <p class="jb-description pr-[40px] pb-[20px]"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </p>
+                            <div class="jb-hero-job-search-content">
+                                <form>
+                                    <div class="jb-job-from-group">
+                                        <label for="Search">Search</label>
+                                        <div class="Jb-job-ibput-box">
+                                            <i class="ri-search-line jb-search-icon"></i>
+                                            <input class="Jb-job-search-input" type="text" name="job-title" placeholder="Job title">
+                                        </div>
+                                    </div>
+                                    <div class="jb-job-from-group">
+                                        <label for="Search">Location</label>
+                                        <div class="Jb-job-ibput-box">
+                                            <i class="ri-map-pin-line jb-search-icon"></i>
+                                            <input class="Jb-job-search-input" type="text" name="location" placeholder="Location">
+                                        </div>
+                                    </div>
+                                    <div class="jb-job-from-group">
+                                        <label for="Search">Job Type</label>
+                                        <div class="Jb-job-ibput-box">
+                                            <i class="ri-briefcase-line jb-search-icon"></i>
+                                            <select class="Jb-job-search-input" id="job-type" name="job-type">
+                                                <option value="Business Development" selected> Business Development </option>
+                                                <option value="IT/Telecommunication"> IT/Telecommunication </option>
+                                                <option value="Engineering/Archietecture"> Engineering/Archietecture </option>
+                                                <option value="NGO"> NGO </option>
+                                                <option value="Business Development"> Business Development </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="jb-job-search-submit">
+                                        <a href="job-search.html"> <button type="button" name="job-search-submit" class="job-search-submit"> Search </button> </a>
+                                    </div>
+                                </form>
+                                
+                            </div>
+                        </div>
+                        <div class="jb-job-popular-notice">
+                            <p> <span>Popular Search:</span> Design, Software, HR, Marketing, Sales...……. </p>
+                        </div>
+                    </div>
+
+                <!-- ===========================
+                    Succeed Employee Statistics
+                ============================= -->
+                
+                    <div class="jb-hero-job-display-wrapper w-[472px] lg:w-50">
+                        <div class="jb-hero-job-display">
+                            <div class="jb-front-job-d-image">
+                                <img class="front-job-display-image" src="assets/images/Jb-job-display-women.png" alt="Job Display" width="327" height="419">
+                                <div class="jb-people-use-service-display">
+                                    <h4 class="people-use-service-heading"> People used our service </h4>
+                                    <div class="jb-all-job-employee">
+                                        <ul class="jb-all-job-employee-list">
+                                            <li class="jb-emp-child"> <img src="assets/images/job-emp-photo/Image 4.png" width="40" height="40" alt="Succeed Employee"> </li>
+                                            <li class="jb-emp-child"> <img src="assets/images/job-emp-photo/Image 5.png" width="40" height="40" alt="Succeed Employee"> </li>
+                                            <li class="jb-emp-child"> <img src="assets/images/job-emp-photo/Image 6.png" width="40" height="40" alt="Succeed Employee"> </li>
+                                            <li class="jb-emp-child"> <img src="assets/images/job-emp-photo/Image 7.png" width="40" height="40" alt="Succeed Employee"> </li>
+                                            <li class="jb-emp-child"> <img src="assets/images/job-emp-photo/Image 8.png" width="40" height="40" alt="Succeed Employee"> </li>
+                                            <li class="jb-emp-child jb-emp-total-stat"> 
+                                                <span class="jb-emp-total-stat-highlight"> 21k </span>
+                                                <span> Users </span>   
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="jb-display-live-job">
+                                    <span class="job-emp-random-desc"> <span class="total-job-employee-count"> 1200 </span> Live jobs </span>
+                                </div>
+                                <div class="jb-display-remote-job">
+                                    <span class="job-emp-random-desc"> <span class="total-job-employee-count"> 477 </span> Remote jobs </span>
+                                </div>
+                            </div>
+                            <div class="job-display-behid-layer-one"></div>
+                            <div class="job-display-behid-layer-two"></div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+                <!-- ===========================
+                    Bottom Shape Design
+                =========================== -->
+                
+             <div class="jb-design-shape"></div>
+             <div class="jb-design-shape2"></div>
+        </div>
+   </div>
+
+    <!-- ===========================
+          Browse job Category
+    ============================ -->
+
+    <section>
+        <div class="jb-job-category-wrapper">
+            <div class="container">
+                <div class="jb-job-category-tittle">
+                    <h2 class="section-tittle"> Browse Job Category </h2>
+                    <div class="view-job-title-box">
+                        <p class="jb-view-all-jobs"> View all category </p>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+
+                <div class="jb-all-jobs mt-4">
+                    <div class="jb-job-category-item">
+                        <div class="jb-cat-icon-box">
+                            <img src="assets/images/icon/cat-icon.svg" alt="Category Icon" width="42" height="30">
+                        </div>
+                        <div class="jv-cat-stats">
+                            <h5 class="second-heading"> Creative Design </h5>
+                            <p class="second-sub-heading"> 125 Jobs Open </p>
+                        </div>
+                    </div>
+
+                    <div class="jb-job-category-item">
+                        <div class="jb-cat-icon-box">
+                            <img src="assets/images/icon/cat-icon.svg" alt="Category Icon" width="42" height="30">
+                        </div>
+                        <div class="jv-cat-stats">
+                            <h5 class="second-heading"> Creative Design </h5>
+                            <p class="second-sub-heading"> 125 Jobs Open </p>
+                        </div>
+                    </div>
+
+                    <div class="jb-job-category-item">
+                        <div class="jb-cat-icon-box">
+                            <img src="assets/images/icon/cat-icon.svg" alt="Category Icon" width="42" height="30">
+                        </div>
+                        <div class="jv-cat-stats">
+                            <h5 class="second-heading"> Creative Design </h5>
+                            <p class="second-sub-heading"> 125 Jobs Open </p>
+                        </div>
+                    </div>
+
+                    <div class="jb-job-category-item">
+                        <div class="jb-cat-icon-box">
+                            <img src="assets/images/icon/cat-icon.svg" alt="Category Icon" width="42" height="30">
+                        </div>
+                        <div class="jv-cat-stats">
+                            <h5 class="second-heading"> Creative Design </h5>
+                            <p class="second-sub-heading"> 125 Jobs Open </p>
+                        </div>
+                    </div>
+
+                    <div class="jb-job-category-item">
+                        <div class="jb-cat-icon-box">
+                            <img src="assets/images/icon/cat-icon.svg" alt="Category Icon" width="42" height="30">
+                        </div>
+                        <div class="jv-cat-stats">
+                            <h5 class="second-heading"> Creative Design </h5>
+                            <p class="second-sub-heading"> 125 Jobs Open </p>
+                        </div>
+                    </div>
+
+                    <div class="jb-job-category-item">
+                        <div class="jb-cat-icon-box">
+                            <img src="assets/images/icon/cat-icon.svg" alt="Category Icon" width="42" height="30">
+                        </div>
+                        <div class="jv-cat-stats">
+                            <h5 class="second-heading"> Creative Design </h5>
+                            <p class="second-sub-heading"> 125 Jobs Open </p>
+                        </div>
+                    </div>
+                    
+                    <div class="jb-job-category-item">
+                        <div class="jb-cat-icon-box">
+                            <img src="assets/images/icon/cat-icon.svg" alt="Category Icon" width="42" height="30">
+                        </div>
+                        <div class="jv-cat-stats">
+                            <h5 class="second-heading"> Creative Design </h5>
+                            <p class="second-sub-heading"> 125 Jobs Open </p>
+                        </div>
+                    </div>
+
+                    <div class="jb-job-category-item">
+                        <div class="jb-cat-icon-box">
+                            <img src="assets/images/icon/cat-icon.svg" alt="Category Icon" width="42" height="30">
+                        </div>
+                        <div class="jv-cat-stats">
+                            <h5 class="second-heading"> Creative Design </h5>
+                            <p class="second-sub-heading"> 125 Jobs Open </p>
+                        </div>
+                    </div>
+
+                    <div class="jb-job-category-item">
+                        <div class="jb-cat-icon-box">
+                            <img src="assets/images/icon/cat-icon.svg" alt="Category Icon" width="42" height="30">
+                        </div>
+                        <div class="jv-cat-stats">
+                            <h5 class="second-heading"> Creative Design </h5>
+                            <p class="second-sub-heading"> 125 Jobs Open </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="view-job-title-box view-job-title-box-mb">
+                    <p class="jb-view-all-jobs"> View all category </p>
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+        Explore Jobs Near You
+    ============================ -->
+
+    <section>
+        <div class="jb-explore-jobs-wrapper">
+            <div class="container">
+                <div class="jb-explore-job-tittle">
+                    <h2 class="section-tittle"> Explore Jobs Near You </h2>
+                    <div class="view-job-title-box">
+                        <p class="jb-view-all-jobs"> View all jobs </p>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+
+                <div class="jb-explore-jobs mt-4">
+                    <div class="jb-explore-job-item">
+                        <div class="explore-jobs-content-body explore-flex">
+                            <div class="explore-jobs-icon-box">
+                                <img src="assets/images/company-photo/company-logo.png" alt="Explore Jobs Icon" >
+                            </div>
+                            <div class="jb-job-explore-text-details">
+                                <h5 class="explore-heading-color second-heading"> Software Engineer </h5>
+                                <p class="second-sub-heading explore-subheading-color"> Acer Bangladesh </p>
+                                <ul class="jb-explore-job-type">
+                                    <li> <i class="ri-map-pin-line icon-green"></i> <span> Dhaka </span> </li>
+                                    <li> <i class="ri-briefcase-line icon-green"></i> <span> 2 Years </span> </li>
+                                    <li> <i class="ri-money-dollar-circle-line icon-green"></i> <span> 35,000-45,000 </span> </li>
+                                </ul>
+                            </div>
+                            <div class="jb-explore-favourite">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </div>
+                        <p class="jb-explore-posted-date"> <span> 2 days ago </span> </p>
+                    </div>
+
+                    <div class="jb-explore-job-item">
+                        <div class="explore-jobs-content-body explore-flex">
+                            <div class="explore-jobs-icon-box">
+                                <img src="assets/images/company-photo/company-logo.png" alt="Explore Jobs Icon" >
+                            </div>
+                            <div class="jb-job-explore-text-details">
+                                <h5 class="explore-heading-color second-heading"> Software Engineer </h5>
+                                <p class="second-sub-heading explore-subheading-color"> Acer Bangladesh </p>
+                                <ul class="jb-explore-job-type">
+                                    <li> <i class="ri-map-pin-line icon-green"></i> <span> Dhaka </span> </li>
+                                    <li> <i class="ri-briefcase-line icon-green"></i> <span> 2 Years </span> </li>
+                                    <li> <i class="ri-money-dollar-circle-line icon-green"></i> <span> 35,000-45,000 </span> </li>
+                                </ul>
+                            </div>
+                            <div class="jb-explore-favourite">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </div>
+                        <p class="jb-explore-posted-date"> <span> 2 days ago </span> </p>
+                    </div>
+
+                    <div class="jb-explore-job-item">
+                        <div class="explore-jobs-content-body explore-flex">
+                            <div class="explore-jobs-icon-box">
+                                <img src="assets/images/company-photo/company-logo.png" alt="Explore Jobs Icon" >
+                            </div>
+                            <div class="jb-job-explore-text-details">
+                                <h5 class="explore-heading-color second-heading"> Software Engineer </h5>
+                                <p class="second-sub-heading explore-subheading-color"> Acer Bangladesh </p>
+                                <ul class="jb-explore-job-type">
+                                    <li> <i class="ri-map-pin-line icon-green"></i> <span> Dhaka </span> </li>
+                                    <li> <i class="ri-briefcase-line icon-green"></i> <span> 2 Years </span> </li>
+                                    <li> <i class="ri-money-dollar-circle-line icon-green"></i> <span> 35,000-45,000 </span> </li>
+                                </ul>
+                            </div>
+                            <div class="jb-explore-favourite">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </div>
+                        <p class="jb-explore-posted-date"> <span> 2 days ago </span> </p>
+                    </div>
+
+                    <div class="jb-explore-job-item">
+                        <div class="explore-jobs-content-body explore-flex">
+                            <div class="explore-jobs-icon-box">
+                                <img src="assets/images/company-photo/company-logo.png" alt="Explore Jobs Icon" >
+                            </div>
+                            <div class="jb-job-explore-text-details">
+                                <h5 class="explore-heading-color second-heading"> Software Engineer </h5>
+                                <p class="second-sub-heading explore-subheading-color"> Acer Bangladesh </p>
+                                <ul class="jb-explore-job-type">
+                                    <li> <i class="ri-map-pin-line icon-green"></i> <span> Dhaka </span> </li>
+                                    <li> <i class="ri-briefcase-line icon-green"></i> <span> 2 Years </span> </li>
+                                    <li> <i class="ri-money-dollar-circle-line icon-green"></i> <span> 35,000-45,000 </span> </li>
+                                </ul>
+                            </div>
+                            <div class="jb-explore-favourite">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </div>
+                        <p class="jb-explore-posted-date"> <span> 2 days ago </span> </p>
+                    </div>
+
+                    <div class="jb-explore-job-item">
+                        <div class="explore-jobs-content-body explore-flex">
+                            <div class="explore-jobs-icon-box">
+                                <img src="assets/images/company-photo/company-logo.png" alt="Explore Jobs Icon" >
+                            </div>
+                            <div class="jb-job-explore-text-details">
+                                <h5 class="explore-heading-color second-heading"> Software Engineer </h5>
+                                <p class="second-sub-heading explore-subheading-color"> Acer Bangladesh </p>
+                                <ul class="jb-explore-job-type">
+                                    <li> <i class="ri-map-pin-line icon-green"></i> <span> Dhaka </span> </li>
+                                    <li> <i class="ri-briefcase-line icon-green"></i> <span> 2 Years </span> </li>
+                                    <li> <i class="ri-money-dollar-circle-line icon-green"></i> <span> 35,000-45,000 </span> </li>
+                                </ul>
+                            </div>
+                            <div class="jb-explore-favourite">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </div>
+                        <p class="jb-explore-posted-date"> <span> 2 days ago </span> </p>
+                    </div>
+
+                    <div class="jb-explore-job-item">
+                        <div class="explore-jobs-content-body explore-flex">
+                            <div class="explore-jobs-icon-box">
+                                <img src="assets/images/company-photo/company-logo.png" alt="Explore Jobs Icon" >
+                            </div>
+                            <div class="jb-job-explore-text-details">
+                                <h5 class="explore-heading-color second-heading"> Software Engineer </h5>
+                                <p class="second-sub-heading explore-subheading-color"> Acer Bangladesh </p>
+                                <ul class="jb-explore-job-type">
+                                    <li> <i class="ri-map-pin-line icon-green"></i> <span> Dhaka </span> </li>
+                                    <li> <i class="ri-briefcase-line icon-green"></i> <span> 2 Years </span> </li>
+                                    <li> <i class="ri-money-dollar-circle-line icon-green"></i> <span> 35,000-45,000 </span> </li>
+                                </ul>
+                            </div>
+                            <div class="jb-explore-favourite">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </div>
+                        <p class="jb-explore-posted-date"> <span> 2 days ago </span> </p>
+                    </div>
+
+
+                </div>
+                <div class="view-job-title-box view-job-title-box-mb">
+                    <p class="jb-view-all-jobs"> View all jobs </p>
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===========================
+            Job by Location
+    ============================ -->
+    <section>
+        <div class="jb-job-location-wrapper">
+            <div class="container">
+                <div class="jb-job-location-tittle">
+                    <h2 class="section-tittle"> Job by Location </h2>
+                    <div class="view-job-title-box">
+                        <p class="jb-view-all-jobs"> View all location </p>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+
+                <div class="jb-job-location mt-4">
+                    <div class="jb-job-location-item">
+
+                        <div class="job-location-content-body">
+                            <div class="job-location-img">
+                                <img src="assets/images/job-by-location/jb-job-by-location-image-01.png" width="370" height="237" alt="job location images" >
+                            </div>
+                            <div class="job-location-inner">
+                                <div class="job-location-inner-title">
+                                    <i class="ri-map-pin-fill icon-blue"></i>
+                                    <h3 class=" job-location-title"> Morocco </h3>
+                                </div>
+                                <p class="second-sub-heading job-location-count" > <span> 225 Jobs </span> </p>
+                            </div>
+                        </div>
+
+                        <div class="job-location-content-body">
+                            <div class="job-location-img">
+                                <img src="assets/images/job-by-location/jb-job-by-location-image-02.png" width="370" height="237" alt="job location images" >
+                            </div>
+                            <div class="job-location-inner">
+                                <div class="job-location-inner-title">
+                                    <i class="ri-map-pin-fill icon-blue"></i>
+                                    <h3 class=" job-location-title"> Dubai </h3>
+                                </div>
+                                <p class="second-sub-heading job-location-count" > <span> 225 Jobs </span> </p>
+                            </div>
+                        </div>
+
+                        <div class="job-location-content-body">
+                            <div class="job-location-img">
+                                <img src="assets/images/job-by-location/jb-job-by-location-image-03.png" width="370" height="237" alt="job location images" >
+                            </div>
+                            <div class="job-location-inner">
+                                <div class="job-location-inner-title">
+                                    <i class="ri-map-pin-fill icon-blue"></i>
+                                    <h3 class=" job-location-title"> Oslo </h3>
+                                </div>
+                                <p class="second-sub-heading job-location-count" > <span> 348 Jobs </span> </p>
+                            </div>
+                        </div>
+
+                        <div class="job-location-content-body">
+                            <div class="job-location-img">
+                                <img src="assets/images/job-by-location/jb-job-by-location-image-04.png" width="370" height="237" alt="job location images" >
+                            </div>
+                            <div class="job-location-inner">
+                                <div class="job-location-inner-title">
+                                    <i class="ri-map-pin-fill icon-blue"></i>
+                                    <h3 class=" job-location-title"> Sydney </h3>
+                                </div>
+                                <p class="second-sub-heading job-location-count" > <span> 766 Jobs </span> </p>
+                            </div>
+                        </div>
+
+                        <div class="job-location-content-body">
+                            <div class="job-location-img">
+                                <img src="assets/images/job-by-location/jb-job-by-location-image-05.png" width="370" height="237" alt="job location images" >
+                            </div>
+                            <div class="job-location-inner">
+                                <div class="job-location-inner-title">
+                                    <i class="ri-map-pin-fill icon-blue"></i>
+                                    <h3 class=" job-location-title"> Paris </h3>
+                                </div>
+                                <p class="second-sub-heading job-location-count" > <span> 435 Jobs </span> </p>
+                            </div>
+                        </div>
+
+                        <div class="job-location-content-body">
+                            <div class="job-location-img">
+                                <img src="assets/images/job-by-location/jb-job-by-location-image-06.png" width="370" height="237" alt="job location images" >
+                            </div>
+                            <div class="job-location-inner">
+                                <div class="job-location-inner-title">
+                                    <i class="ri-map-pin-fill icon-blue"></i>
+                                    <h3 class=" job-location-title"> Dhaka </h3>
+                                </div>
+                                <p class="second-sub-heading job-location-count" > <span> 2245 Jobs </span> </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="view-job-title-box view-job-title-box-mb">
+                        <p class="jb-view-all-jobs"> View all location </p>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+           Find Best Companies
+    ============================ -->
+    
+    <section>
+        <div class="jb-find-best-companies-wrapper">
+            <div class="container">
+                <div class="jb-best-com-content-body">
+                    <div class="jb-bestcompanies-photos">
+                        <img src="assets/images/companies.png" alt="Best Companies" width="370" height="410px">
+                        <img src="assets/images/companies-work-env.png" alt="Companies Work Environment" width="312" height="329">
+                    </div>
+                    <div class="jb-best-companies">
+                        <h2 class="section-tittle text-left-im"> Find Best Companies </h2>
+                        <p class="best-comp-title-desc pr-[70px]"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna </p>
+                        <div class="jb-all-best-companies">
+                            <div class="jb-best-com-item">
+                                <div class="jb-best-com-item-image">
+                                    <img src="assets/images/company-photo/walton.png" alt="Walton" width="65" height="65">
+                                </div>
+                                <h5 class="second-heading company-title"> Walton BD </h5>
+                                <p class="jb-explore-posted-date best-com-sub-tittle"> 25 Jobs Open </p>
+                            </div>
+
+                            <div class="jb-best-com-item">
+                                <div class="jb-best-com-item-image">
+                                    <img src="assets/images/company-photo/bdtech.svg" alt="Walton" width="65" height="65">
+                                </div>
+                                <h5 class="second-heading company-title"> BC Tech </h5>
+                                <p class="jb-explore-posted-date best-com-sub-tittle"> 25 Jobs Open </p>
+                            </div>
+
+                            <div class="jb-best-com-item">
+                                <div class="jb-best-com-item-image">
+                                    <img src="assets/images/company-photo/square.png" alt="Walton" width="65" height="65">
+                                </div>
+                                <h5 class="second-heading company-title"> Square </h5>
+                                <p class="jb-explore-posted-date best-com-sub-tittle"> 25 Jobs Open </p>
+                            </div>
+
+                            <div class="jb-best-com-item">
+                                <div class="jb-best-com-item-image">
+                                    <img src="assets/images/company-photo/square.png" alt="Walton" width="65" height="65">
+                                </div>
+                                <h5 class="second-heading company-title"> Square </h5>
+                                <p class="jb-explore-posted-date best-com-sub-tittle"> 25 Jobs Open </p>
+                            </div>
+
+                            <div class="jb-best-com-item">
+                                <div class="jb-best-com-item-image">
+                                    <img src="assets/images/company-photo/walton.png" alt="Walton" width="65" height="65">
+                                </div>
+                                <h5 class="second-heading company-title"> Walton BD </h5>
+                                <p class="jb-explore-posted-date best-com-sub-tittle"> 25 Jobs Open </p>
+                            </div>
+
+                            <div class="jb-best-com-item">
+                                <div class="jb-best-com-item-image">
+                                    <img src="assets/images/company-photo/bdtech.svg" alt="Walton" width="65" height="65">
+                                </div>
+                                <h5 class="second-heading company-title"> BC Tech </h5>
+                                <p class="jb-explore-posted-date best-com-sub-tittle"> 25 Jobs Open </p>
+                            </div>
+                        </div>
+                        <div class="view-com-title-box">
+                            <p class="jb-view-all-com"> Find more companies </p>
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ===========================
+                Testmonial
+    ============================ -->
+
+    <section>
+        <div class="jb-testmonial-wrapper">
+            <div class="container">
+                <h2 class="section-tittle text-left-im"> What Our Clients Say </h2>
+                <div class="jb-client-testmonial">
+                    <div class="jb-testmonial-clients-details">
+
+                        <div class="jb-testmonial-circle">
+                            <div class="jb-testmonial-circle-inner-replace"></div>
+                        </div>
+
+                        <div class="jb-tesmonial-clients">
+                            <div class="jb-t-clients-item">
+                                <img src="assets/images/clients/jb-clients-1.png" alt="Cients Testmonial">
+                                <div class="jb-clients-details">
+                                    <h5 class="jb-clients-title"> Leefar Diana </h5>
+                                    <p class="jb-clients-designation"> COO, Medikit </p>
+                                </div>
+                            </div>
+
+                            <div class="jb-t-clients-item">
+                                <img src="assets/images/clients/jb-clients-3.png" alt="Cients Testmonial">
+                                <div class="jb-clients-details">
+                                    <h5 class="jb-clients-title"> Stepnar Shell </h5>
+                                    <p class="jb-clients-designation"> CEO, Yedme </p>
+                                </div>
+                            </div>
+
+                            <div class="jb-t-clients-item">
+                                <img src="assets/images/clients/jb-clients-2.png" alt="Cients Testmonial">
+                                <div class="jb-clients-details">
+                                    <h5 class="jb-clients-title"> Raster Paul </h5>
+                                    <p class="jb-clients-designation"> CEO, Milton Kraft </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jb-testmonial-content">
+                        <div class="jb-testmonial-q-mark">
+                            <img src="assets/images/icon/left-quote.png" alt="Left Quote">
+                        </div>
+                        <p class="clients-quotation">
+                            <span class="quotation-mark"> Lorem </span> ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                        </p>
+                        <div class="ratings">
+                            <span class="jb-rating-number"> 5.0 </span>
+                            <span class="jb-star-ratings"> <i class="ri-star-fill"></i> <i class="ri-star-fill"></i> <i class="ri-star-fill"></i> <i class="ri-star-fill"></i> <i class="ri-star-fill"></i> <i class="ri-star-fill"></i> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================
+                Footer
+    =========================== -->
+
+    <footer>
+        <div class="jb-footer-wrapper">
+            <div class="container px-mb">
+                <div class="jb-footer-content jb-m-l-border">
+                    <div class="jb-footer-logo-box">
+                        <img src="assets/images/logo/footer-logo.svg" alt="Footer Logo">
+                        <span class="jb-social-icon-box"> 
+                            <i class="ri-facebook-fill"></i> <i class="ri-twitter-fill"></i> <i class="ri-instagram-line"></i> <i class="ri-linkedin-fill"></i>
+                        </span>
+                    </div>
+                    <div class="jb-footer-content-body main-layout">
+                        <ul class="jb-footer-list main-l-footer m-l-fix">
+                            <li id="jb-footer-list-target" class="jb-footer-nav-header main-l-footer-li"> <span> Recruiter </span> <span class="rotateIcon"><i class="ri-arrow-down-s-line"></i></span>  </li>
+                            <li class="jb-footer-item jb-i-none"> Post a Job </li>
+                            <li class="jb-footer-item jb-i-none"> Featured Job </li>
+                            <li class="jb-footer-item jb-i-none"> Browse Candidates </li>
+                            <li class="jb-footer-item jb-i-none"> Recruiter Dashboard </li>
+                        </ul>
+                        <ul class="jb-footer-list main-l-footer m-l-fix">
+                            <li class="jb-footer-nav-header main-l-footer-li"> <span> Job Seeker </span> <span class="rotateIcon"><i class="ri-arrow-down-s-line"></i></span>  </li>
+                            <li class="jb-footer-item jb-i-none"> Post a Job </li>
+                            <li class="jb-footer-item jb-i-none"> Featured Job </li>
+                            <li class="jb-footer-item jb-i-none"> Browse Candidates </li>
+                            <li class="jb-footer-item jb-i-none"> Recruiter Dashboard </li>
+                        </ul>
+                        <ul class="jb-footer-list main-l-footer m-l-fix">
+                            <li class="jb-footer-nav-header main-l-footer-li"> <span> About Company </span> <span class="rotateIcon"><i class="ri-arrow-down-s-line"></i></span>  </li>
+                            <li class="jb-footer-item jb-i-none"> Post a Job </li>
+                            <li class="jb-footer-item  jb-i-none"> Featured Job </li>
+                            <li class="jb-footer-item jb-i-none"> Browse Candidates </li>
+                            <li class="jb-footer-item jb-i-none"> Recruiter Dashboard </li>
+                        </ul>
+                        <ul class="jb-footer-list main-l-footer m-l-fix">
+                            <li class="jb-footer-nav-header main-l-footer-li"> <span> Contact Us </span> <span class="rotateIcon"><i class="ri-arrow-down-s-line"></i></span>  </li>
+                            <li class="jb-footer-contact jb-i-none"> House #32, Road #12, Sector #9, Uttara, Dhaka. </li>
+                            <li class="jb-footer-contact jb-i-none"> E: jobportal@gmail.com <br> W: www.jobportal.com</li>
+                            <li class="jb-footer-nav-subscribe jb-i-none-2"> Subscribe </li>
+                            <li class="jb-footer-subscribe-box main-l-subs jb-i-none-2"> 
+                                <form>
+                                    <input type="email" name="subscription-email" placeholder="Enter your email">
+                                    <i class="ri-arrow-right-line"></i>
+                                </form>
+                            </li>
+                        </ul>
+                        <div class="mb-footer-subdcribe-m-l">
+                            <div class="mb-footer-subdcribe-inner">
+                                <span class="mb-main-l-footer-label"> Subscribe </span>
+                                <form>
+                                    <input type="email" name="subscription-email" placeholder="Enter your email">
+                                    <i class="ri-arrow-right-line"></i>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jb-footer-copyright px-mb-enable m-l-footer-d-none">
+                    <p> © 2023 <span>Job Portal</span> | Designed by <span>Arc Studio</span> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+                
+
+    <!-- <script src="assets/js/main.js" type="text/javascript"></script> -->
+
+    <script>
+
+        let test = document.getElementById("job-type");
+        test.style.color = "#96A0B4";
+        
+        const mobileNav = document.getElementById('mb-test');
+
+        const header = document.querySelector(".fixed-navbar");
+        const toggleClass = "is-sticky";
+
+        window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > 150) {
+            header.classList.add(toggleClass);
+            mobileNav.classList.add(toggleClass);
+        } else {
+            header.classList.remove(toggleClass);
+            mobileNav.classList.remove(toggleClass);
+        }
+        });
+
+        
+        let jbMbMenu = document.getElementById('jb-mobile-nav');
+        let jbMbMenu2 = document.getElementById('tryit');
+        let jbMbMenuDis = document.getElementById('jb-mb-menu-show');
+
+        jbMbMenu.addEventListener("click", () => {
+            jbMbMenuDis.classList.add('jb-Mb-Menu-active');
+        });
+
+        document.addEventListener("click", (e) => {
+            if(e.target == jbMbMenu2){
+                jbMbMenuDis.classList.remove('jb-Mb-Menu-active');
+            }
+        });
+
+        // Get all <ul> elements with class 'jb-footer-list'
+            let ulLists = document.querySelectorAll('.m-l-fix');
+
+        ulLists.forEach((ul) => {
+        let footerTrigger = ul.querySelector('.main-l-footer-li');
+        let footerExpand = ul.querySelectorAll('.jb-i-none');
+        let arrowIcon = ul.querySelector('.rotateIcon');
+
+        footerTrigger.addEventListener('click', () => {
+            // Close all other open lists
+            ulLists.forEach((otherUl) => {
+            if (otherUl !== ul) {
+                let otherFooterExpand = otherUl.querySelectorAll('.jb-i-none');
+                let otherArrowIcon = otherUl.querySelector('.rotateIcon');
+
+                otherFooterExpand.forEach((expandItem) => {
+                expandItem.classList.remove('main-l-expanded-Nav');
+                });
+
+                otherArrowIcon.classList.remove('rotate');
+            }
+            });
+
+            // Toggle visibility of list items and rotate the arrow icon
+            footerExpand.forEach((expandItem) => {
+            expandItem.classList.toggle('main-l-expanded-Nav');
+            });
+
+            arrowIcon.classList.toggle('rotate');
+        });
+        });
+
+
+    </script>
+
+
+
+</body>
+</html>
